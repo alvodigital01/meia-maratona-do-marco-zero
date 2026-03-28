@@ -333,11 +333,7 @@ export default function HomePage() {
                       <PlayIcon className="ml-1 h-8 w-8" />
                     </button>
                   </div>
-                  <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-6 sm:flex-row sm:items-end sm:justify-between">
-                    <div>
-                      <p className="font-display text-xs uppercase tracking-[0.28em] text-gold">Área pronta para vídeo oficial</p>
-                      <p className="mt-2 max-w-xl text-lg text-white">Substitua por embed de YouTube, Vimeo ou player proprietário quando o aftermovie final estiver publicado.</p>
-                    </div>
+                  <div className="absolute inset-x-0 bottom-0 p-6 sm:p-7">
                     <div className="font-display text-sm uppercase tracking-[0.22em] text-white/68">teaser da 1ª edição</div>
                   </div>
                 </div>

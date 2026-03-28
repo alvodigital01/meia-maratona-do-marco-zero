@@ -60,18 +60,18 @@ export const summitTopics = [
 
 export const gallery = [
   {
-    src: "/images/placeholder-black.svg",
+    src: "/images/background-03.png",
     alt: "Corredores celebrando a energia da Meia Maratona do Marco Zero no Recife",
-    caption: "Cenário real de prova para substituir por fotos oficiais"
+    caption: "Registro visual preparado para receber os melhores momentos da prova"
   },
   {
     src: "/images/background-03.png",
     alt: "Arte de apoio em azul vibrante da identidade da Meia Maratona do Marco Zero",
-    caption: "Texturas e grafismos inspirados na identidade oficial"
+    caption: "Identidade visual urbana inspirada na energia oficial do evento"
   },
   {
     src: "/images/background-04.png",
     alt: "Grafismo esportivo urbano em azul com elementos de movimento",
-    caption: "Espaço preparado para imagens da experiência do evento"
+    caption: "Espaço editorial para destacar atmosfera, público e percurso"
   }
 ] as const;

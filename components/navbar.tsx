@@ -25,11 +25,11 @@ const variantClasses: Record<
   }
 > = {
   solid: {
-    shellBase: "mx-auto max-w-7xl border rounded-[1.15rem]",
-    shellScrolled: "border-white/12 bg-[rgba(8,14,25,0.94)] shadow-[0_18px_48px_rgba(0,0,0,0.28)] backdrop-blur-xl",
-    shellTop: "border-white/10 bg-[rgba(8,14,25,0.9)] shadow-[0_12px_32px_rgba(0,0,0,0.2)] backdrop-blur-lg",
-    inner: "px-4 py-2.5 sm:px-6 lg:px-8",
-    logoBox: "border-white/14 bg-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.14)]",
+    shellBase: "mx-auto max-w-7xl border rounded-[1.35rem]",
+    shellScrolled: "border-[#20407f]/28 bg-[linear-gradient(180deg,rgba(7,20,46,0.96),rgba(8,16,30,0.94))] shadow-[0_18px_48px_rgba(0,18,56,0.24)] backdrop-blur-xl",
+    shellTop: "border-[#2a4b8e]/24 bg-[linear-gradient(180deg,rgba(8,25,58,0.9),rgba(8,18,36,0.86))] shadow-[0_12px_32px_rgba(0,18,56,0.18)] backdrop-blur-lg",
+    inner: "px-4 py-2.5 sm:px-6 lg:px-7",
+    logoBox: "border-[#3c67bb]/22 bg-[linear-gradient(180deg,rgba(0,91,255,0.18),rgba(255,255,255,0.05))] shadow-[inset_0_1px_0_rgba(255,255,255,0.12)]",
     nav: "text-white/74 hover:text-white hover:bg-white/[0.06] hover:border-white/10",
     cta: "bg-gold text-midnight hover:bg-[#ffd05d]",
     mobileButton: "border-white/12 bg-white/10 text-white"
@@ -38,7 +38,7 @@ const variantClasses: Record<
     shellBase: "mx-auto max-w-7xl border rounded-[1.8rem]",
     shellScrolled: "border-white/12 bg-[rgba(7,13,24,0.86)] shadow-[0_22px_60px_rgba(0,0,0,0.28)] backdrop-blur-2xl",
     shellTop: "border-white/10 bg-[linear-gradient(180deg,rgba(7,13,24,0.78),rgba(7,13,24,0.64))] shadow-[0_16px_40px_rgba(0,0,0,0.2)] backdrop-blur-xl",
-    inner: "px-4 py-2.5 sm:px-6 lg:px-8",
+    inner: "px-4 py-2.5 sm:px-6 lg:px-7",
     logoBox: "border-white/14 bg-[linear-gradient(180deg,rgba(255,255,255,0.12),rgba(255,255,255,0.06))] shadow-[inset_0_1px_0_rgba(255,255,255,0.14)]",
     nav: "text-white/80 hover:text-white hover:bg-white/[0.06] hover:border-white/10",
     cta: "bg-gold text-midnight hover:bg-[#ffd05d]",
@@ -80,20 +80,20 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-4">
       <div className={`${variant.shellBase} ${scrolled ? variant.shellScrolled : variant.shellTop} transition-all duration-300`}>
         <div className={`mx-auto flex items-center justify-between ${variant.inner}`}>
-          <Link href="#top" className="group flex items-center gap-3" aria-label="Voltar ao topo">
-            <span className={`relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border p-2 ${variant.logoBox}`}>
+          <Link href="#top" className="group flex items-center gap-3 rounded-full pr-3" aria-label="Voltar ao topo">
+            <span className={`relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-[1.1rem] border p-2 ${variant.logoBox}`}>
               <Image
                 src="/images/mz-mark.png"
                 alt="Logo da Meia Maratona do Marco Zero"
                 fill
-                className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+                className="object-contain p-[0.45rem] transition-transform duration-300 group-hover:scale-105"
                 sizes="48px"
                 priority
               />
             </span>
             <span className="hidden sm:block">
               <span className="block font-display text-xs uppercase tracking-[0.32em] text-gold">2ª edição</span>
-              <span className="block font-display text-[1.02rem] font-bold uppercase tracking-[0.08em] text-white">
+              <span className="block font-display text-[1rem] font-bold uppercase tracking-[0.07em] text-white">
                 Meia Maratona do Marco Zero
               </span>
             </span>

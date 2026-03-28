@@ -186,7 +186,7 @@ export default function HomePage() {
           </div>
 
         </section>
-        <section className="border-y border-white/8 bg-white/[0.03] py-4">
+        <section className="border-y border-white/6 bg-[linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.02))] py-4">
           <div className="overflow-hidden whitespace-nowrap">
             <div className="flex w-[220%] animate-marquee gap-10 font-display text-sm uppercase tracking-[0.36em] text-white/58">
               {Array.from({ length: 2 }).map((_, index) => (
@@ -206,7 +206,7 @@ export default function HomePage() {
         </section>
 
         <section id="desafio" aria-labelledby="desafio-title" className="relative overflow-hidden py-24 sm:py-28">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#051120_0%,#08162b_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,#091320_0%,#0c1830_100%)]" />
           <div className="absolute inset-0 bg-[url('/images/background-03.png')] bg-cover bg-center opacity-10" />
           <div className="absolute left-0 top-0 h-full w-full bg-grid-fade bg-[size:54px_54px] opacity-[0.05]" />
           <div className="absolute right-[-8rem] top-8 h-[26rem] w-[26rem] rounded-full bg-electric/16 blur-3xl" data-parallax data-depth="54" />
@@ -240,31 +240,31 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="sobre" aria-labelledby="sobre-title" className="relative overflow-hidden bg-white py-24 text-midnight sm:py-28">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,91,255,0.05),transparent_30%)]" />
-          <div className="relative mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.82fr_1.18fr] lg:px-8 lg:items-start">
-            <div className="max-w-xl lg:sticky lg:top-28">
+        <section id="sobre" aria-labelledby="sobre-title" className="bg-white py-24 text-midnight sm:py-28">
+          <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.86fr_1.14fr] lg:px-8 lg:items-start">
+            <div className="max-w-xl">
               <Reveal><p className="font-display text-sm uppercase tracking-[0.34em] text-electric">Sobre o evento</p></Reveal>
-              <Reveal delay={0.05}><h2 id="sobre-title" className="mt-5 font-display text-4xl font-bold uppercase leading-[0.94] tracking-hero sm:text-5xl lg:text-[3.7rem]">Depois de uma estreia marcante, o evento volta ainda maior</h2></Reveal>
+              <Reveal delay={0.05}><h2 id="sobre-title" className="mt-5 font-display text-4xl font-bold uppercase leading-[0.94] tracking-hero sm:text-5xl lg:text-[3.9rem]">Depois de uma estreia marcante, o evento volta ainda maior</h2></Reveal>
               <Reveal delay={0.1}><p className="mt-6 text-lg leading-8 text-midnight/78">A Meia Maratona do Marco Zero se consolida como um dos principais eventos de corrida de rua do Nordeste, conectando performance, cultura e experiência urbana em um dos cenários mais simbólicos do Brasil.</p></Reveal>
               <Reveal delay={0.15}><p className="mt-4 text-lg leading-8 text-midnight/70">Mais do que uma prova, o evento propõe uma vivência completa entre esporte, cidade, identidade e superação.</p></Reveal>
+              <Reveal delay={0.18}><div className="mt-8 h-px w-24 bg-electric/30" /></Reveal>
             </div>
-            <Stagger className="grid gap-4 sm:grid-cols-[1.12fr_0.88fr]">
-              <StaggerItem className="sm:row-span-2">
-                <div className="relative h-full overflow-hidden rounded-[2.1rem] border border-[#24479a] bg-[#0b2454] shadow-[0_24px_70px_rgba(8,18,33,0.12)]">
-                  <Image src={gallery[0].src} alt={gallery[0].alt} width={1200} height={1200} className="h-full min-h-[30rem] w-full object-cover opacity-86" />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,15,26,0.04),rgba(10,15,26,0.84))]" />
-                  <div className="absolute left-0 top-0 m-5 rounded-full border border-white/14 bg-white/10 px-4 py-2 font-display text-[0.66rem] uppercase tracking-[0.24em] text-white/82 backdrop-blur">Recife em movimento</div>
+
+            <Stagger className="grid gap-4 md:grid-cols-[1.08fr_0.92fr]">
+              <StaggerItem className="md:row-span-2">
+                <div className="relative h-full overflow-hidden rounded-[2rem] border border-[#d8e4ff] bg-[#0b2454] shadow-[0_24px_70px_rgba(8,18,33,0.12)]">
+                  <Image src={gallery[0].src} alt={gallery[0].alt} width={1400} height={1200} className="h-full min-h-[30rem] w-full object-cover opacity-88" />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,15,26,0.06),rgba(10,15,26,0.82))]" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-7">
                     <p className="font-display text-[0.72rem] uppercase tracking-[0.28em] text-gold">Galeria oficial</p>
                     <p className="mt-3 max-w-md text-xl leading-8">{gallery[0].caption}</p>
                   </div>
                 </div>
               </StaggerItem>
-              {gallery.slice(1).map((item, index) => (
+              {gallery.slice(1).map((item) => (
                 <StaggerItem key={item.src}>
-                  <div className={`relative overflow-hidden rounded-[1.8rem] border ${index === 0 ? "border-[#d6e3ff] bg-[#e8f0ff]" : "border-[#d6e3ff] bg-[#edf4ff]"}`}>
-                    <Image src={item.src} alt={item.alt} width={900} height={900} className="h-[14.4rem] w-full object-cover" />
+                  <div className="relative overflow-hidden rounded-[1.8rem] border border-[#d8e4ff] bg-[#edf4ff]">
+                    <Image src={item.src} alt={item.alt} width={900} height={900} className="h-[14.8rem] w-full object-cover" />
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,15,26,0.04),rgba(10,15,26,0.72))]" />
                     <div className="absolute inset-x-0 bottom-0 p-5 text-white">
                       <p className="font-display text-[0.62rem] uppercase tracking-[0.24em] text-gold">Destaque visual</p>
@@ -278,7 +278,7 @@ export default function HomePage() {
         </section>
 
         <section id="distancias" aria-labelledby="distancias-title" className="relative overflow-hidden py-24 sm:py-28">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#081326_0%,#0a1221_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1528_0%,#0d1830_100%)]" />
           <div className="absolute left-0 top-0 h-full w-full bg-grid-fade bg-[size:48px_48px] opacity-[0.06]" />
           <div className="absolute inset-y-0 right-0 w-1/2 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.03))]" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -298,28 +298,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section aria-labelledby="experiencia-title" className="bg-white py-24 text-midnight sm:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <SectionHeading eyebrow="Experiência do evento" title="Mais do que uma corrida, uma experiência completa" copy="A Meia Maratona do Marco Zero vai além da linha de chegada. É sobre correr em um cenário icônico, sentir a energia das ruas, viver Recife em movimento e fazer parte de uma experiência que une esporte, cultura e memória." centered />
-            <Stagger className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {experienceItems.map((item, index) => (
-                <StaggerItem key={item}>
-                  <article className={`rounded-[1.8rem] border p-6 shadow-card ${index % 2 === 0 ? "border-electric/12 bg-[#f3f7ff]" : "border-midnight/12 bg-white"}`}>
-                    <div className="flex items-center justify-between">
-                      <span className="font-display text-sm uppercase tracking-[0.28em] text-electric">0{index + 1}</span>
-                      <span className="h-3 w-3 rounded-full bg-gold" aria-hidden="true" />
-                    </div>
-                    <h3 className="mt-8 font-display text-2xl font-semibold uppercase">{item}</h3>
-                    <p className="mt-4 text-midnight/68">Estrutura pronta para detalhar serviços, operação e diferenciais da prova com linguagem institucional, leitura forte e foco em conversão.</p>
-                  </article>
-                </StaggerItem>
-              ))}
-            </Stagger>
-          </div>
-        </section>
 
         <section aria-labelledby="aftermovie-title" className="relative overflow-hidden py-24 sm:py-28">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#061221_0%,#0b1930_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1426_0%,#0d1c35_100%)]" />
           <div className="absolute inset-0 bg-[url('/images/background-03.png')] bg-cover bg-center opacity-10" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow="Aftermovie" title="Reviva a energia da primeira edição" copy="Assista ao aftermovie e sinta a atmosfera de uma prova que já nasceu marcante." light centered />
@@ -368,7 +349,7 @@ export default function HomePage() {
         </section>
 
         <section id="summit" aria-labelledby="summit-title" className="relative overflow-hidden py-24 sm:py-28">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#09111d_0%,#111f35_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,#0b1425_0%,#10203a_100%)]" />
           <div className="absolute right-[-6rem] top-0 h-[24rem] w-[24rem] rounded-full bg-gold/18 blur-3xl" data-parallax data-depth="50" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow="Muito além da prova" title="MZ Summit" copy="Encontros que conectam corrida, empreendedorismo, saúde e cultura." light centered />
@@ -409,7 +390,7 @@ export default function HomePage() {
           </div>
         </section>
         <section aria-labelledby="cta-title" className="relative overflow-hidden py-24 sm:py-28">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#06152a_0%,#0b2f7c_38%,#005bff_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1426_0%,#0d244d_42%,#0f3f9f_100%)]" />
           <div className="absolute inset-0 bg-[url('/images/background-04.png')] bg-cover bg-center opacity-10 mix-blend-screen" />
           <div className="absolute inset-x-0 top-0 h-px bg-white/14" />
           <div className="absolute left-[8%] top-12 h-40 w-40 rounded-full border border-white/10" />
@@ -438,7 +419,7 @@ export default function HomePage() {
             </Reveal>
           </div>
         </section>
-        <section aria-labelledby="marcas-title" className="relative overflow-hidden bg-[#07101b] py-20 sm:py-24">
+        <section aria-labelledby="marcas-title" className="relative overflow-hidden bg-[linear-gradient(180deg,#0b1425_0%,#09111f_100%)] py-20 sm:py-24">
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_28%,rgba(255,255,255,0.03)_100%)]" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <Reveal>
@@ -471,7 +452,7 @@ export default function HomePage() {
 
       </main>
 
-      <footer className="border-t border-white/10 bg-[#070d18]">
+      <footer className="border-t border-white/6 bg-[linear-gradient(180deg,#09111f_0%,#070d18_100%)]">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1fr_auto_auto] lg:px-8">
           <div>
             <p className="font-display text-2xl font-bold uppercase tracking-[0.06em] text-white">Meia Maratona do Marco Zero</p>

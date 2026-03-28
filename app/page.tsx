@@ -323,24 +323,41 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="percurso" aria-labelledby="percurso-title" className="bg-white py-24 text-midnight sm:py-28">
+                <section id="percurso" aria-labelledby="percurso-title" className="bg-white py-24 text-midnight sm:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow="Percurso" title="Um percurso que conecta esporte e cidade" copy="Percurso oficial em breve, todos os detalhes do percurso oficial da 2ª Meia Maratona do Marco Zero." centered />
             <Reveal delay={0.15} className="mt-12">
-              <div className="relative overflow-hidden rounded-[2rem] border border-[#d6e1ff] bg-[#f7faff] p-8">
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,91,255,.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,91,255,.08)_1px,transparent_1px)] bg-[size:42px_42px]" />
-                <div className="absolute left-1/2 top-1/2 h-[22rem] w-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-electric/15" />
-                <div className="absolute left-[18%] top-[30%] h-24 w-24 rounded-full bg-electric/12 blur-xl" />
-                <div className="absolute right-[18%] top-[55%] h-24 w-24 rounded-full bg-gold/18 blur-xl" />
-                <div className="relative grid gap-8 lg:grid-cols-[1fr_0.62fr]">
-                  <div className="rounded-[1.6rem] border border-electric/10 bg-white/90 p-6">
-                    <div className="mb-6 inline-flex rounded-full bg-electric px-4 py-2 font-display text-xs uppercase tracking-[0.22em] text-white">Percurso completo em breve</div>
-                    <p className="max-w-2xl text-lg leading-8 text-midnight/72">O percurso da prova foi pensado para valorizar a experiência dos atletas em um dos cenários mais simbólicos do Recife, conectando performance, ritmo e identidade urbana.</p>
+              <div className="overflow-hidden rounded-[2rem] border border-[#d9e3f8] bg-white shadow-[0_30px_90px_rgba(10,15,26,0.08)]">
+                <div className="grid lg:grid-cols-[1.04fr_0.96fr]">
+                  <div className="flex flex-col justify-center p-8 sm:p-10 lg:p-12">
+                    <p className="font-display text-sm uppercase tracking-[0.3em] text-electric">Percurso oficial em breve</p>
+                    <h3 className="mt-5 max-w-2xl font-display text-3xl font-semibold uppercase leading-[0.96] text-midnight sm:text-4xl">
+                      Uma rota pensada para conectar performance, cidade e atmosfera de grande prova
+                    </h3>
+                    <p className="mt-6 max-w-2xl text-lg leading-8 text-midnight/72">
+                      O percurso da prova foi desenhado para valorizar a experiência dos atletas em um dos cenários mais simbólicos do Recife, unindo ritmo, identidade urbana e pontos marcantes da cidade.
+                    </p>
+                    <p className="mt-6 text-sm uppercase tracking-[0.24em] text-midnight/46">
+                      Mapa completo, altimetria, pontos de apoio e informações oficiais serão divulgados em breve.
+                    </p>
                   </div>
-                  <div className="rounded-[1.6rem] border border-electric/10 bg-midnight p-6 text-white">
-                    <p className="font-display text-sm uppercase tracking-[0.3em] text-gold">Selo</p>
-                    <p className="mt-4 font-display text-3xl font-semibold uppercase">Percurso oficial em breve</p>
-                    <p className="mt-4 text-white/68">Mapa, altimetria, pontos de apoio e informações completas serão publicados em breve.</p>
+                  <div className="relative min-h-[22rem] border-t border-[#d9e3f8] bg-[linear-gradient(180deg,#f7faff_0%,#edf4ff_100%)] lg:border-l lg:border-t-0">
+                    <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,91,255,.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,91,255,.08)_1px,transparent_1px)] bg-[size:42px_42px]" />
+                    <div className="absolute left-[12%] top-[18%] h-28 w-28 rounded-full border border-electric/15" />
+                    <div className="absolute right-[14%] top-[20%] h-20 w-20 rounded-full border border-gold/30" />
+                    <div className="absolute bottom-[18%] left-[18%] h-24 w-24 rounded-full bg-electric/10 blur-2xl" />
+                    <div className="absolute bottom-[16%] right-[16%] h-24 w-24 rounded-full bg-gold/18 blur-2xl" />
+                    <div className="absolute left-[18%] top-[28%] h-[2px] w-[58%] -rotate-[16deg] rounded-full bg-[linear-gradient(90deg,rgba(0,91,255,0.18),rgba(245,180,0,0.65),rgba(10,15,26,0.22))]" />
+                    <div className="absolute left-[26%] top-[48%] h-[2px] w-[42%] rotate-[12deg] rounded-full bg-[linear-gradient(90deg,rgba(10,15,26,0.12),rgba(0,91,255,0.52),rgba(245,180,0,0.28))]" />
+                    <div className="absolute left-[24%] top-[25%] h-3 w-3 rounded-full bg-electric ring-[8px] ring-electric/12" />
+                    <div className="absolute left-[49%] top-[45%] h-3 w-3 rounded-full bg-white ring-[8px] ring-midnight/10" />
+                    <div className="absolute right-[24%] top-[60%] h-3 w-3 rounded-full bg-gold ring-[8px] ring-gold/18" />
+                    <div className="absolute bottom-8 left-8 right-8 rounded-[1.4rem] border border-white/70 bg-white/80 p-5 backdrop-blur">
+                      <p className="font-display text-xs uppercase tracking-[0.28em] text-midnight/46">Recife em movimento</p>
+                      <p className="mt-3 max-w-md font-display text-2xl font-semibold uppercase leading-tight text-midnight">
+                        Um percurso preparado para traduzir a força urbana da prova
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -348,47 +365,52 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="summit" aria-labelledby="summit-title" className="relative overflow-hidden py-24 sm:py-28">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#0b1425_0%,#10203a_100%)]" />
-          <div className="absolute right-[-6rem] top-0 h-[24rem] w-[24rem] rounded-full bg-gold/18 blur-3xl" data-parallax data-depth="50" />
+                        <section id="summit" aria-labelledby="summit-title" className="relative overflow-hidden bg-[linear-gradient(180deg,#0a1426_0%,#0b1830_38%,#09111f_100%)] py-24 sm:py-28">
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.015),transparent_24%,rgba(255,255,255,0.025)_100%)]" />
+          <div className="absolute right-[-7rem] top-[6%] h-[22rem] w-[22rem] rounded-full bg-gold/14 blur-3xl" data-parallax data-depth="45" />
+          <div className="absolute left-[-8rem] bottom-[8%] h-[24rem] w-[24rem] rounded-full bg-electric/14 blur-3xl" data-parallax data-depth="30" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading eyebrow="Muito além da prova" title="MZ Summit" copy="Encontros que conectam corrida, empreendedorismo, saúde e cultura." light centered />
-            <Reveal delay={0.15}><p className="mx-auto mt-6 max-w-3xl text-center text-lg leading-8 text-white/68">Durante os dias que antecedem a prova, o MZ Summit reúne nomes relevantes para conversas sobre performance, mercado, bem-estar e transformação.</p></Reveal>
-            <div className="mt-12 grid gap-6 lg:grid-cols-[1.02fr_0.98fr] lg:items-start">
+            <Reveal delay={0.15}>
+              <p className="mx-auto mt-6 max-w-3xl text-center text-lg leading-8 text-white/72">
+                Durante os dias que antecedem a prova, o MZ Summit reúne nomes relevantes para conversas sobre performance, mercado, bem-estar e transformação.
+              </p>
+            </Reveal>
+            <div className="mt-14 grid gap-6 lg:grid-cols-[0.96fr_1.04fr] lg:items-start">
               <Reveal>
-                <div className="rounded-[2rem] border border-white/10 bg-white/6 p-6 backdrop-blur">
+                <div className="rounded-[1.9rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.2)] backdrop-blur sm:p-7">
                   <p className="font-display text-sm uppercase tracking-[0.28em] text-gold">Área da marca do summit</p>
-                  <div className="mt-6 flex min-h-[16rem] items-center justify-center rounded-[1.6rem] border border-dashed border-white/18 bg-gradient-to-b from-white/10 to-transparent text-center font-display text-3xl font-semibold uppercase tracking-[0.12em] text-white/42">MZ Summit</div>
+                  <div className="mt-6 flex min-h-[16rem] items-center justify-center rounded-[1.6rem] border border-dashed border-white/18 bg-gradient-to-b from-white/10 to-transparent text-center font-display text-3xl font-semibold uppercase tracking-[0.12em] text-white/42">
+                    MZ Summit
+                  </div>
                 </div>
               </Reveal>
               <Reveal delay={0.08}>
-                <div className="space-y-4">
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    {summitTopics.slice(0, 4).map((topic) => (
-                      <article key={topic} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur">
-                        <p className="font-display text-xs uppercase tracking-[0.24em] text-gold">Tema</p>
-                        <h3 className="mt-3 font-display text-2xl font-semibold uppercase text-white">{topic}</h3>
-                      </article>
-                    ))}
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {summitTopics.slice(0, 4).map((topic) => (
+                    <article key={topic} className="rounded-[1.45rem] border border-white/10 bg-white/[0.05] p-5 backdrop-blur">
+                      <p className="font-display text-xs uppercase tracking-[0.24em] text-gold">Tema</p>
+                      <h3 className="mt-3 font-display text-2xl font-semibold uppercase text-white">{topic}</h3>
+                    </article>
+                  ))}
+                  <div className="sm:col-span-2 rounded-[1.45rem] border border-white/10 bg-white/[0.04] px-5 py-4 font-display text-xs uppercase tracking-[0.26em] text-white/48 backdrop-blur">
+                    + 4 temas complementares na programação do summit
                   </div>
-                  <p className="font-display text-xs uppercase tracking-[0.26em] text-white/48">+ 4 temas complementares na programação do summit</p>
                 </div>
               </Reveal>
             </div>
           </div>
         </section>
 
-        <section aria-labelledby="cta-title" className="relative overflow-hidden py-24 sm:py-28">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1426_0%,#0d244d_42%,#0f3f9f_100%)]" />
-          <div className="absolute inset-0 bg-[url('/images/background-04.png')] bg-cover bg-center opacity-10 mix-blend-screen" />
-          <div className="absolute inset-x-0 top-0 h-px bg-white/14" />
-          <div className="absolute left-[8%] top-12 h-40 w-40 rounded-full border border-white/10" />
-          <div className="absolute right-[10%] bottom-10 h-48 w-48 rounded-full bg-gold/18 blur-3xl" />
-          <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <Reveal><p className="font-display text-sm uppercase tracking-[0.34em] text-white/70">Chamada oficial</p></Reveal>
+        <section aria-labelledby="cta-title" className="relative overflow-hidden bg-[linear-gradient(180deg,#09111f_0%,#0b1830_50%,#0a1426_100%)] py-24 sm:py-28">
+          <div className="absolute inset-0 bg-[url('/images/background-04.png')] bg-cover bg-center opacity-8 mix-blend-screen" />
+          <div className="absolute inset-x-0 top-0 h-px bg-white/8" />
+          <div className="absolute right-[10%] bottom-[8%] h-52 w-52 rounded-full bg-gold/14 blur-3xl" />
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-5xl text-center">
+              <Reveal><p className="font-display text-sm uppercase tracking-[0.34em] text-gold">Chamada oficial</p></Reveal>
               <Reveal delay={0.05}><h2 id="cta-title" className="mx-auto mt-5 max-w-4xl font-display text-4xl font-bold uppercase leading-[0.94] tracking-hero text-white sm:text-5xl lg:text-[4.5rem]">Faça parte da segunda edição de um evento que já nasceu grande</h2></Reveal>
-              <Reveal delay={0.1}><p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/80">Prepare-se para viver Recife de um jeito único, enfrentar novos desafios e correr em uma prova que conecta performance, cultura e história.</p></Reveal>
+              <Reveal delay={0.1}><p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/78">Prepare-se para viver Recife de um jeito único, enfrentar novos desafios e correr em uma prova que conecta performance, cultura e história.</p></Reveal>
             </div>
 
             <Reveal delay={0.14}>
@@ -408,8 +430,10 @@ export default function HomePage() {
             </Reveal>
           </div>
         </section>
-        <section aria-labelledby="marcas-title" className="relative overflow-hidden bg-[linear-gradient(180deg,#0b1425_0%,#09111f_100%)] py-20 sm:py-24">
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent_28%,rgba(255,255,255,0.03)_100%)]" />
+
+        <section aria-labelledby="marcas-title" className="relative overflow-hidden bg-[linear-gradient(180deg,#0a1426_0%,#09111f_100%)] py-24 sm:py-28">
+          <div className="absolute inset-x-0 top-0 h-px bg-white/8" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.015),transparent_28%,rgba(255,255,255,0.02)_100%)]" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <Reveal>
               <div className="mx-auto max-w-4xl text-center">
@@ -417,15 +441,15 @@ export default function HomePage() {
                 <h2 id="marcas-title" className="mt-5 font-display text-4xl font-bold uppercase tracking-hero text-white sm:text-5xl">
                   Quem acelera essa experiência
                 </h2>
-                <p className="mt-5 text-lg leading-8 text-white/68">
+                <p className="mt-5 text-lg leading-8 text-white/72">
                   Área oficial para exibir patrocinadores, apoiadores e marcas que constroem a 2ª Meia Maratona do Marco Zero.
                 </p>
               </div>
             </Reveal>
 
             <Reveal delay={0.12} className="mt-12">
-              <div className="mx-auto max-w-[52rem] overflow-hidden rounded-[1.55rem] border border-white/10 bg-white/[0.04] p-3 shadow-glow backdrop-blur sm:p-3.5">
-                <div className="rounded-[1.1rem] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] p-2 sm:p-2.5">
+              <div className="mx-auto max-w-[52rem] overflow-hidden rounded-[1.7rem] border border-white/10 bg-white/[0.05] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.2)] backdrop-blur sm:p-4">
+                <div className="rounded-[1.2rem] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] p-2.5 sm:p-3">
                   <Image
                     src="/images/sponsors-1920x1080.png"
                     alt="Marcas patrocinadoras, apoiadores e parceiros da 2ª Meia Maratona do Marco Zero"

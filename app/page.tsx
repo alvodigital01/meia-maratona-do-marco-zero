@@ -253,7 +253,7 @@ export default function HomePage() {
             <Stagger className="grid gap-4 md:grid-cols-[1.08fr_0.92fr]">
               <StaggerItem className="md:row-span-2">
                 <div className="relative h-full overflow-hidden rounded-[2rem] border border-[#d8e4ff] bg-[#0b2454] shadow-[0_24px_70px_rgba(8,18,33,0.12)]">
-                  <Image src={gallery[0].src} alt={gallery[0].alt} width={1400} height={1200} className="h-full min-h-[30rem] w-full object-cover opacity-88" />
+                  <Image src={gallery[0].src} alt={gallery[0].alt} width={1400} height={1200} className="h-[14.8rem] w-full object-cover opacity-88 md:h-full md:min-h-[30rem]" />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,15,26,0.06),rgba(10,15,26,0.82))]" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-7">
                     <p className="font-display text-[0.72rem] uppercase tracking-[0.28em] text-gold">Galeria oficial</p>
@@ -378,17 +378,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section aria-labelledby="posicionamento-title" className="relative overflow-hidden bg-white py-24 text-midnight sm:py-28">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,91,255,0.05),transparent_36%)]" />
-          <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-5xl text-center">
-              <Reveal><p className="font-display text-sm uppercase tracking-[0.34em] text-electric">Posicionamento</p></Reveal>
-              <Reveal delay={0.05}><h2 id="posicionamento-title" className="mx-auto mt-5 max-w-4xl font-display text-4xl font-bold uppercase leading-[0.94] tracking-hero sm:text-5xl lg:text-[4.1rem]">A corrida que coloca Recife no mapa das grandes provas do Brasil</h2></Reveal>
-              <Reveal delay={0.1}><p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-midnight/72">Com identidade forte, cenário icônico e uma proposta que une esporte, cidade e experiência, a Meia Maratona do Marco Zero reforça seu lugar entre os eventos mais promissores do calendário nacional de corrida de rua.</p></Reveal>
-              <Reveal delay={0.14}><p className="mt-8 font-display text-sm uppercase tracking-[0.28em] text-electric/78">Recife, performance, cultura e uma prova com assinatura própria.</p></Reveal>
-            </div>
-          </div>
-        </section>
         <section aria-labelledby="cta-title" className="relative overflow-hidden py-24 sm:py-28">
           <div className="absolute inset-0 bg-[linear-gradient(180deg,#0a1426_0%,#0d244d_42%,#0f3f9f_100%)]" />
           <div className="absolute inset-0 bg-[url('/images/background-04.png')] bg-cover bg-center opacity-10 mix-blend-screen" />

@@ -597,61 +597,69 @@ img {
 
 .countdown-section {
   background:
-    radial-gradient(circle at 12% 16%, rgba(13, 99, 216, 0.12), transparent 24%),
-    radial-gradient(circle at 88% 16%, rgba(239, 182, 61, 0.18), transparent 24%),
-    linear-gradient(180deg, rgba(246, 250, 255, 0.98) 0%, rgba(236, 244, 255, 0.98) 100%);
+    linear-gradient(180deg, rgba(236, 174, 13, 0.9), rgba(226, 162, 8, 0.9)),
+    url('./bgdourado.png') center/cover no-repeat;
 }
 
 .countdown-shell {
   text-align: center;
-  padding: 34px 24px;
-  border-radius: 28px;
-  border: 1px solid rgba(13, 99, 216, 0.12);
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: var(--shadow-soft);
+  padding: 24px 8px 8px;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.countdown-section .section-eyebrow {
+  margin: 0 0 10px;
+  color: rgba(10, 10, 10, 0.75);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-align: center;
 }
 
 .countdown-title {
   margin: 0;
-  color: #0c1730;
+  color: #0b0b0b;
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
-  font-weight: 800;
-  letter-spacing: 0.02em;
+  font-size: clamp(1.55rem, 3.5vw, 3.1rem);
+  font-weight: 900;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .countdown-grid {
-  margin-top: 20px;
+  margin-top: 18px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 14px;
 }
 
 .countdown-item {
-  padding: 16px 10px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, rgba(9, 37, 88, 0.96), rgba(13, 63, 139, 0.92));
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 22px 10px 18px;
+  border-radius: 2px;
+  background: rgba(255, 191, 0, 0.12);
+  border: 2px solid rgba(16, 16, 16, 0.32);
 }
 
 .countdown-value {
   display: block;
-  color: #ffffff;
+  color: #080808;
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.7vw, 2.2rem);
-  font-weight: 800;
+  font-size: clamp(2.1rem, 4.8vw, 4rem);
+  font-weight: 900;
   line-height: 1;
 }
 
 .countdown-label {
   display: block;
-  margin-top: 8px;
-  color: rgba(255, 255, 255, 0.82);
+  margin-top: 10px;
+  color: #111111;
   font-family: var(--font-body);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 .experience-section {
@@ -1182,18 +1190,19 @@ img {
   }
 }
 
-@media (max-width: 640px) {`r`n  .countdown-grid {`r`n    grid-template-columns: repeat(2, minmax(0, 1fr));`r`n  }`r`n
-  .route-highlights {
+@media (max-width: 640px) {
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+   .route-highlights {
     grid-template-columns: 1fr;
   }
 
   .route-card-main {
-  grid-row: span 2;
-  min-height: 390px;
-  background:
-    linear-gradient(180deg, rgba(8, 18, 36, 0.34), rgba(8, 18, 36, 0.62)),
-    url('./20250720_LUC_MarcoZero__11193.jpg.jpeg') center/cover no-repeat;
-}
+    grid-row: auto;
+    min-height: 230px;
+  }
 
   .route-card {
     min-height: 170px;
@@ -1287,18 +1296,19 @@ img {
   }
 }
 
-@media (max-width: 640px) {`r`n  .countdown-grid {`r`n    grid-template-columns: repeat(2, minmax(0, 1fr));`r`n  }`r`n
-  .route-highlights {
+@media (max-width: 640px) {
+  .countdown-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+   .route-highlights {
     grid-template-columns: 1fr;
   }
 
   .route-card-main {
-  grid-row: span 2;
-  min-height: 390px;
-  background:
-    linear-gradient(180deg, rgba(8, 18, 36, 0.34), rgba(8, 18, 36, 0.62)),
-    url('./20250720_LUC_MarcoZero__11193.jpg.jpeg') center/cover no-repeat;
-}
+    grid-row: auto;
+    min-height: 230px;
+  }
 
   .route-card {
     min-height: 170px;
@@ -1420,6 +1430,10 @@ img {
     align-items: flex-start;
   }
 }
+
+
+
+
 
 
 

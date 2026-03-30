@@ -3,6 +3,8 @@ const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('main section[id], footer[id]');
 const hero = document.querySelector('.hero-media');
 const interactiveCards = document.querySelectorAll('.interactive-card');
+const siteHeader = document.querySelector('.site-header');
+const menuToggle = document.querySelector('.menu-toggle');
 
 if ('IntersectionObserver' in window) {
   const revealObserver = new IntersectionObserver(
@@ -23,6 +25,28 @@ if ('IntersectionObserver' in window) {
   revealElements.forEach((element) => revealObserver.observe(element));
 } else {
   revealElements.forEach((element) => element.classList.add('is-visible'));
+}
+
+if (siteHeader && menuToggle) {
+  const closeMenu = () => {
+    siteHeader.classList.remove('menu-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = siteHeader.classList.toggle('menu-open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navLinks.forEach((link) => link.addEventListener('click', closeMenu));
+
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeMenu();
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 960) closeMenu();
+  });
 }
 
 if ('IntersectionObserver' in window && sections.length) {
@@ -81,3 +105,4 @@ interactiveCards.forEach((card) => {
   card.addEventListener('pointerleave', resetCard);
   card.addEventListener('pointerup', resetCard);
 });
+

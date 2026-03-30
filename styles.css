@@ -662,6 +662,248 @@ img {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
+.countdown-ticker-section {
+  position: relative;
+  overflow: hidden;
+  background: url('./bgdourado.png') center/cover repeat-x;
+  border-top: 2px solid #0a0a0a;
+  border-bottom: 2px solid #0a0a0a;
+}
+
+.countdown-ticker-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('./bgdourado.png') center/cover repeat-x;
+  opacity: 0.9;
+  animation: tickerGoldShift 16s linear infinite;
+}
+
+.countdown-ticker-track {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: max-content;
+  animation: tickerMove 36s linear infinite;
+}
+
+.countdown-ticker-row {
+  margin: 0;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  color: #111111;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.countdown-ticker-row span {
+  flex: 0 0 auto;
+}
+
+.countdown-ticker-row::after {
+  content: "•";
+  color: #111111;
+  margin-left: 42px;
+}
+
+@keyframes tickerMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes tickerGoldShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 520px 0;
+  }
+}
+.tourism-section {
+  background: #ffffff;
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+.tourism-shell {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tourism-eyebrow {
+  color: rgba(14, 46, 92, 0.7);
+}
+
+.tourism-title {
+  margin: 0;
+  color: #0c1730;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.distance-section {
+  background: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.distance-shell {
+  text-align: center;
+}
+.distance-eyebrow {
+  margin: 0;
+  color: rgba(14, 46, 92, 0.62);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.distance-title {
+  margin: 6px 0 0;
+  color: #0c1730;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.distance-bubbles {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.distance-bubble {
+  width: 196px;
+  height: 196px;
+  border-radius: 20px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #ffffff 0%, #eef4ff 68%, #dce7fa 100%);
+  border: 2px solid rgba(17, 44, 87, 0.2);
+  box-shadow: 0 14px 30px rgba(12, 37, 82, 0.16);
+  overflow: hidden;
+}
+
+.distance-bubble-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 14px;
+}
+
+.distance-bubble-5 {
+  background: linear-gradient(165deg, #ffd6ef 0%, #ff66b6 52%, #e6007e 100%);
+  border-color: rgba(176, 28, 110, 0.62);
+  box-shadow: 0 16px 34px rgba(198, 36, 123, 0.38);
+}
+
+.distance-bubble-10 {
+  background: linear-gradient(165deg, #d9ebff 0%, #4b9dff 50%, #0d4ab8 100%);
+  border-color: rgba(17, 74, 184, 0.64);
+  box-shadow: 0 16px 34px rgba(24, 88, 206, 0.4);
+}
+
+.distance-bubble-21 {
+  background: linear-gradient(165deg, #dbffd8 0%, #56d952 52%, #118c2a 100%);
+  border-color: rgba(24, 130, 46, 0.64);
+  box-shadow: 0 16px 34px rgba(26, 141, 52, 0.4);
+}
+
+.distance-bubble-30 {
+  background: linear-gradient(165deg, #fff2a5 0%, #efbf46 54%, #d8921c 100%);
+  border-color: rgba(164, 109, 17, 0.62);
+  box-shadow: 0 16px 34px rgba(184, 128, 26, 0.42);
+}
+.tourism-marquee {
+  overflow: hidden;
+  width: 100%;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.tourism-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.tourism-row {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  padding: 0 10px;
+}
+
+.tourism-card {
+  position: relative;
+  margin: 0;
+  width: 340px;
+  height: 210px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(12, 43, 90, 0.16);
+  box-shadow: var(--shadow-soft);
+  flex: 0 0 auto;
+}
+
+.tourism-image {
+  pointer-events: none;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tourism-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 21, 46, 0.48) 0%, rgba(8, 21, 46, 0.08) 48%, rgba(8, 21, 46, 0.04) 100%);
+}
+
+.tourism-caption {
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 1;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-family: var(--font-body);
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tourism-marquee.is-dragging {
+  cursor: grabbing;
+}
 .experience-section {
   background:
     radial-gradient(circle at 18% 16%, rgba(13, 99, 216, 0.08), transparent 24%),
@@ -799,7 +1041,7 @@ img {
 .topics-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 16px;
 }
 
 .topic-chip {
@@ -1191,6 +1433,42 @@ img {
 }
 
 @media (max-width: 640px) {
+  .distance-bubble {
+    width: 128px;
+    height: 128px;
+    font-size: 0.92rem;
+  }
+
+  .tourism-title {
+    font-size: clamp(1.3rem, 7.4vw, 2rem);
+  }
+
+  .tourism-card {
+    width: 260px;
+    height: 196px;
+  }
+
+  .tourism-caption {
+  pointer-events: none;
+
+    font-size: 0.58rem;
+  }
+
+  .countdown-ticker-row {
+  margin: 0;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  color: #111111;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
   .countdown-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1297,6 +1575,42 @@ img {
 }
 
 @media (max-width: 640px) {
+  .distance-bubble {
+    width: 128px;
+    height: 128px;
+    font-size: 0.92rem;
+  }
+
+  .tourism-title {
+    font-size: clamp(1.3rem, 7.4vw, 2rem);
+  }
+
+  .tourism-card {
+    width: 260px;
+    height: 196px;
+  }
+
+  .tourism-caption {
+  pointer-events: none;
+
+    font-size: 0.58rem;
+  }
+
+  .countdown-ticker-row {
+  margin: 0;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  color: #111111;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
   .countdown-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1430,26 +1744,6 @@ img {
     align-items: flex-start;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

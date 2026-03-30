@@ -171,6 +171,101 @@ if (countdownRoot) {
   window.setInterval(updateCountdown, 1000);
 }
 
+const tourismMarquee = document.querySelector('.tourism-marquee');
+
+if (tourismMarquee) {
+  const tourismTrack = tourismMarquee.querySelector('.tourism-track');
+  const tourismRows = tourismTrack ? tourismTrack.querySelectorAll('.tourism-row') : [];
+
+  if (tourismTrack && tourismRows.length) {
+    let loopWidth = tourismRows[0].scrollWidth;
+    let offset = 0;
+    let speed = -0.28;
+    let dragging = false;
+    let lastX = 0;
+    let lastTime = 0;
+    let velocity = 0;
+
+    const normalizeOffset = () => {
+      if (!loopWidth) return;
+      while (offset <= -loopWidth) offset += loopWidth;
+      while (offset > 0) offset -= loopWidth;
+    };
+
+    const render = () => {
+      normalizeOffset();
+      tourismTrack.style.transform = `translateX(${offset}px)`;
+    };
+
+    const onPointerDown = (event) => {
+      dragging = true;
+      velocity = 0;
+      lastX = event.clientX;
+      lastTime = performance.now();
+      tourismMarquee.classList.add('is-dragging');
+      tourismMarquee.setPointerCapture(event.pointerId);
+    };
+
+    const onPointerMove = (event) => {
+      if (!dragging) return;
+      const now = performance.now();
+      const dx = event.clientX - lastX;
+      const dt = Math.max(1, now - lastTime);
+
+      offset += dx;
+      velocity = dx / dt;
+      lastX = event.clientX;
+      lastTime = now;
+
+      render();
+    };
+
+    const onPointerUp = () => {
+      if (!dragging) return;
+      dragging = false;
+      tourismMarquee.classList.remove('is-dragging');
+
+      if (Math.abs(velocity) > 0.001) {
+        speed = Math.max(-1.2, Math.min(1.2, velocity * 14));
+      }
+
+      if (Math.abs(speed) < 0.12) {
+        speed = speed >= 0 ? 0.12 : -0.12;
+      }
+    };
+
+    tourismMarquee.addEventListener('pointerdown', onPointerDown);
+    tourismMarquee.addEventListener('pointermove', onPointerMove);
+    tourismMarquee.addEventListener('pointerup', onPointerUp);
+    tourismMarquee.addEventListener('pointercancel', onPointerUp);
+    tourismMarquee.addEventListener('lostpointercapture', onPointerUp);
+
+    const resizeObserver = () => {
+      loopWidth = tourismRows[0].scrollWidth;
+      render();
+    };
+
+    window.addEventListener('resize', resizeObserver);
+
+    const tick = () => {
+      if (!dragging) {
+        offset += speed;
+      }
+
+      speed *= 0.998;
+      if (!dragging && Math.abs(speed) < 0.12) {
+        speed = speed >= 0 ? 0.12 : -0.12;
+      }
+
+      render();
+      window.requestAnimationFrame(tick);
+    };
+
+    render();
+    window.requestAnimationFrame(tick);
+  }
+}
+
 const updateHeroParallax = () => {
   if (!hero) return;
   const offset = Math.min(window.scrollY * 0.12, 36);
@@ -206,6 +301,7 @@ interactiveCards.forEach((card) => {
   card.addEventListener('pointerleave', resetCard);
   card.addEventListener('pointerup', resetCard);
 });
+
 
 
 

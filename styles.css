@@ -1173,6 +1173,10 @@ img {
   display: block;
 }
 
+.experience-mobile-break {
+  display: none;
+}
+
 .experience-heading .section-copy {
   margin-inline: auto;
 }
@@ -2008,6 +2012,10 @@ img {
   .route-story-title {
     font-size: clamp(2rem, 8vw, 3.6rem);
     line-height: 0.9;
+  }
+
+  .experience-mobile-break {
+    display: block;
   }
 
   .route-media-image {

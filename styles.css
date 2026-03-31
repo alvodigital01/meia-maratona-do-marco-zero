@@ -1441,10 +1441,18 @@ img {
   box-shadow: none;
 }
 
-.regulation-copy,
+.regulation-copy {
+  position: relative;
+  z-index: 1;
+}
+
 .regulation-action-wrap {
   position: relative;
   z-index: 1;
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+  justify-self: end;
 }
 
 .regulation-eyebrow {
@@ -1453,7 +1461,7 @@ img {
 
 .regulation-title {
   margin: 0;
-  max-width: 17ch;
+  max-width: none;
   color: #ffffff;
   font-family: var(--font-display);
   font-size: clamp(2.15rem, 4vw, 3.6rem);
@@ -1462,18 +1470,17 @@ img {
   text-transform: uppercase;
 }
 
+.regulation-title span {
+  display: block;
+  white-space: nowrap;
+}
+
 .regulation-text {
   max-width: 40rem;
   margin: 16px 0 0;
   color: rgba(255, 255, 255, 0.82);
   font-size: 1rem;
   line-height: 1.72;
-}
-
-.regulation-action-wrap {
-  display: grid;
-  gap: 16px;
-  justify-items: start;
 }
 
 .regulation-badge {
@@ -1520,11 +1527,12 @@ img {
   }
 
   .regulation-title {
-    max-width: 19ch;
+    max-width: none;
   }
 
   .regulation-action-wrap {
     justify-items: start;
+    justify-self: start;
   }
 }
 
@@ -1545,37 +1553,7 @@ img {
 
   .regulation-title {
     font-size: clamp(1.7rem, 9vw, 2.4rem);
-    max-width: 15ch;
-  }
-
-  .regulation-button {
-    width: 100%;
-  }
-}
-
-
-@media (max-width: 900px) {
-  .regulation-card {
-    grid-template-columns: 1fr;
-  }
-
-  .regulation-title {
-    max-width: 18ch;
-  }
-
-  .regulation-action-wrap {
-    justify-items: start;
-  }
-}
-
-@media (max-width: 640px) {
-  .regulation-card {
-    padding: 24px;
-    border-radius: 24px;
-  }
-
-  .regulation-title {
-    font-size: clamp(1.7rem, 9vw, 2.4rem);
+    max-width: none;
   }
 
   .regulation-button {
@@ -2054,6 +2032,9 @@ img {
   background: url('./bgazul.png') center/cover no-repeat;
   box-shadow: 0 26px 60px rgba(16, 40, 74, 0.16);
 }
+
+
+
 
 
 

@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="./logosite.png" />
+    <link rel="icon" type="image/png" href="./logoheader.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="#inicio" aria-label="Página inicial da Meia Maratona do Marco Zero">
-          <img src="./logosite.png" alt="Logo da Meia Maratona do Marco Zero" class="brand-logo" />
+          <img src="./logoheader.png" alt="Logo da Meia Maratona do Marco Zero" class="brand-logo" />
         </a>
 
         <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
@@ -32,34 +32,42 @@
 
         <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
           <a class="nav-link is-active" href="#inicio">Início</a>
-          <a class="nav-link" href="#percurso">Percurso</a>
+          <a class="nav-link" href="#distancias">Distâncias</a>
           <a class="nav-link" href="#experiencia">Experiência</a>
           <a class="nav-link" href="#summit">MZ Summit</a>
           <a class="nav-link" href="#inscricoes">Inscrições</a>
-          <a
-            class="nav-link nav-link-instagram"
-            href="https://www.instagram.com/meiamaratonadomarcozero/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Instagram oficial da Meia Maratona do Marco Zero"
-          >
-            <svg class="nav-instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.38-2.63a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26Z" fill="currentColor"/>
-            </svg>
-          </a>
+          <div class="header-actions">
+            <a
+              class="nav-link nav-link-instagram"
+              href="https://www.instagram.com/meiamaratonadomarcozero/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram oficial da Meia Maratona do Marco Zero"
+            >
+              <svg class="nav-instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.38-2.63a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26Z" fill="currentColor"/>
+              </svg>
+            </a>
+            <div class="button-light-wrap header-signup-wrap"><span class="button-light-glow" aria-hidden="true"></span><a class="header-signup-button cta-button animated-light-button" href="https://www.ticketsports.com.br/e/2o-meia-maratona-do-marco-zero-86465" target="_blank" rel="noreferrer">Fazer inscrição</a></div>
+          </div>
         </nav>
       </div>
     </header>
 
     <main>
       <section id="inicio" class="hero-banner" aria-label="Área principal em destaque">
-        <div class="hero-media hero-slider" data-slider data-slider-interval="4500" aria-label="Banner principal do evento">
+        <a class="hero-media hero-slider hero-media-link" data-slider data-slider-interval="4500" aria-label="Banner principal do evento" href="https://www.ticketsports.com.br/e/2o-meia-maratona-do-marco-zero-86465" target="_blank" rel="noreferrer">
           <div class="hero-slides">
             <figure class="hero-slide is-active">
               <img src="./header2.png" alt="Banner principal da Meia Maratona do Marco Zero" class="hero-slide-image" />
             </figure>
           </div>
           <div class="hero-slider-dots" aria-hidden="true"></div>
+        </a>
+        <div class="hero-cta-strip">
+          <div class="container hero-cta-wrap">
+            <div class="button-light-wrap hero-cta-button-wrap"><span class="button-light-glow" aria-hidden="true"></span><a class="cta-button animated-light-button hero-cta-button" href="https://www.ticketsports.com.br/e/2o-meia-maratona-do-marco-zero-86465" target="_blank" rel="noreferrer">Inscreva-se agora</a></div>
+          </div>
         </div>
       </section>
 
@@ -68,7 +76,7 @@
           <div class="route-panel reveal">
             <div class="route-story">
               <p class="section-eyebrow route-panel-eyebrow">Sobre o evento</p>
-              <h2 class="route-story-title">DEPOIS DE<br />UMA ESTREIA<br />MARCANTE<br />O EVENTO<br />VOLTA AINDA<br />MAIOR.</h2>
+              <h2 class="route-story-title">DEPOIS DE<br />UMA ESTREIA<br />MARCANTE,<br />O EVENTO<br />VOLTA AINDA<br />MAIOR.</h2>
             </div>
 
             <figure class="route-media reveal" aria-label="Imagem da seção Sobre o evento">
@@ -252,7 +260,7 @@
           </div>
         </div>
       </section>
-      <section class="section distance-section reveal race-section" aria-label="Distâncias da prova">
+      <section id="distancias" class="section distance-section reveal race-section" aria-label="Distâncias da prova">
         <div class="container distance-shell">
           <p class="distance-eyebrow">Distâncias</p>
           <h3 class="distance-title">Escolha o seu desafio</h3>
@@ -341,7 +349,7 @@
             <source src="./WhatsApp Video 2026-03-31 at 01.38.25.mp4" type="video/mp4" />
           </video>
           <h2 class="cta-title">Faça parte da segunda edição de um evento que já nasceu grande.</h2>
-          <a class="cta-button" href="#inicio">Inscreva-se agora</a>
+          <div class="button-light-wrap cta-button-wrap"><span class="button-light-glow" aria-hidden="true"></span><a class="cta-button animated-light-button" href="https://www.ticketsports.com.br/e/2o-meia-maratona-do-marco-zero-86465" target="_blank" rel="noreferrer">Inscreva-se agora</a></div>
         </div>
       </section>
 
@@ -358,7 +366,7 @@
             </div>
 
             <div class="regulation-action-wrap">
-              <a class="regulation-button" href="./373d6d04cb134bffa6038103dd6ab79d639100338090170776.pdf" download="Regulamento-Meia-Maratona-do-Marco-Zero.pdf">Baixar regulamento</a>
+              <div class="button-light-wrap regulation-button-wrap"><span class="button-light-glow" aria-hidden="true"></span><a class="regulation-button animated-light-button" href="./373d6d04cb134bffa6038103dd6ab79d639100338090170776.pdf" download="Regulamento-Meia-Maratona-do-Marco-Zero.pdf">Baixar regulamento</a></div>
             </div>
           </div>
         </div>
@@ -378,13 +386,29 @@
 
       <div class="footer-credit">
         <p class="footer-credit-copy">© COPYRIGHT 2026 • POWERED BY MEIA MARATONA DO MARCO ZERO.</p>
-        <img src="./sejan1logo.png" alt="Logo Seja N1" class="footer-credit-logo" />
+        <a href="https://www.sejan1.com.br" target="_blank" rel="noreferrer" aria-label="Site da Seja N1"><img src="./sejan1logo.png" alt="Logo Seja N1" class="footer-credit-logo" /></a>
       </div>
     </footer>
 
     <script src="./script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

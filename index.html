@@ -42,7 +42,7 @@
 
     <main>
       <section id="inicio" class="hero-banner" aria-label="Área principal em destaque">
-        <div class="hero-media hero-slider" aria-label="Banner principal do evento">
+        <div class="hero-media hero-slider" data-slider data-slider-interval="4500" aria-label="Banner principal do evento">
           <div class="hero-slides">
             <figure class="hero-slide is-active">
               <img src="./header2.png" alt="Banner principal da Meia Maratona do Marco Zero" class="hero-slide-image" />
@@ -54,34 +54,53 @@
 
       <section id="percurso" class="section route-section reveal race-section">
         <div class="container route-shell">
-          <div class="route-story reveal">
-            <p class="section-eyebrow">Sobre o evento</p>
-            <h2 class="route-story-title">Depois de uma estreia marcante, o evento volta ainda maior.</h2>
-            <p class="section-copy">
-              A Meia Maratona do Marco Zero se consolida como um dos principais eventos de corrida de rua do Nordeste,
-              conectando performance, cultura e experiência urbana em um dos cenários mais simbólicos do Brasil.
-            </p>
-            <p class="section-copy">
-              Mais do que uma prova, o evento propõe uma vivência completa entre esporte, cidade, identidade e superação.
-            </p>
-            <span class="route-story-divider" aria-hidden="true"></span>
-          </div>
+          <div class="route-panel reveal">
+            <div class="route-story">
+              <p class="section-eyebrow route-panel-eyebrow">Sobre o evento</p>
+              <h2 class="route-story-title">
+                <span>DEPOIS DE UMA ESTREIA</span>
+                <span>MARCANTE, O</span>
+                <span>EVENTO VOLTA</span>
+                <span>AINDA MAIOR.</span>
+              </h2>
+              <p class="section-copy">
+                Mais do que uma prova, o evento propoe uma vivencia completa entre esporte, cidade, identidade e superacao,
+                transformando cada quilometro em encontro com a energia do Recife.
+              </p>
+            </div>
 
-          <div class="route-highlights reveal" aria-label="Destaques visuais da seção Sobre o evento">
-            <article class="route-card route-card-main">
-              <p class="route-card-kicker">Largada histórica</p>
-              <p class="route-card-text">Marco Zero tomado de energia logo nos primeiros metros.</p>
-            </article>
+            <div class="route-media reveal" aria-label="Galeria da seção Sobre o evento">
+              <div
+                class="about-slider"
+                data-slider
+                data-slider-interval="4200"
+                aria-label="Carrossel de imagens da Meia Maratona do Marco Zero"
+              >
+                <button class="about-slider-arrow about-slider-arrow-prev" type="button" data-slider-prev aria-label="Imagem anterior">
+                  &#8249;
+                </button>
+                <div class="about-slides">
+                  <figure class="about-slide is-active">
+                    <img src="./20250720_LUC_MarcoZero__11193.jpg.jpeg" alt="Atletas correndo pelas ruas do Recife durante a prova" class="about-slide-image" />
+                  </figure>
+                  <figure class="about-slide">
+                    <img src="./DSC01940 (1).jpg.jpeg" alt="Pelotão avançando com a energia do público durante a Meia Maratona do Marco Zero" class="about-slide-image" />
+                  </figure>
+                  <figure class="about-slide">
+                    <img src="./dsc_8351.jpg.jpeg" alt="Momento de concentração e movimento ao longo do percurso da prova" class="about-slide-image" />
+                  </figure>
+                </div>
+                <button class="about-slider-arrow about-slider-arrow-next" type="button" data-slider-next aria-label="Próxima imagem">
+                  &#8250;
+                </button>
+                <div class="about-slider-dots" aria-label="Selecionar imagem do carrossel"></div>
+              </div>
 
-            <article class="route-card route-card-gold">
-              <p class="route-card-kicker">Clima da cidade</p>
-              <p class="route-card-text">Recife pulsando junto com cada atleta no percurso.</p>
-            </article>
-
-            <article class="route-card route-card-blue">
-              <p class="route-card-kicker">Energia do público</p>
-              <p class="route-card-text">A vibração da torcida empurrando até a chegada.</p>
-            </article>
+              <p class="route-media-copy">
+                Do Marco Zero aos trechos que misturam patrimonio, mar e vibracao urbana, o percurso convida atletas de
+                diferentes ritmos a viver uma prova que promete emocao do comeco ao fim.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -321,6 +340,11 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
+
+
+
+
 
 
 

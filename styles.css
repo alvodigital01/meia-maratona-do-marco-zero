@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --blue-main: #0d63d8;
   --blue-deep: #0b2558;
   --blue-soft: #edf5ff;
@@ -753,6 +753,10 @@ img {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   text-align: center;
+}
+
+.countdown-mobile-break br {
+  display: none;
 }
 
 .countdown-grid {
@@ -1511,15 +1515,16 @@ img {
   max-width: none;
   color: #ffffff;
   font-family: var(--font-display);
-  font-size: clamp(2.15rem, 4vw, 3.6rem);
-  font-weight: 800;
-  line-height: 0.96;
+  font-size: clamp(2.4rem, 4.7vw, 4.2rem);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: normal;
   text-transform: uppercase;
 }
 
 .regulation-title span {
   display: block;
-  white-space: nowrap;
+  text-wrap: balance;
 }
 
 @media (max-width: 900px) {
@@ -1532,7 +1537,8 @@ img {
   }
 
   .regulation-action-wrap {
-    justify-self: start;
+    justify-content: center;
+    justify-self: center;
   }
 }
 
@@ -1552,12 +1558,15 @@ img {
   }
 
   .regulation-title {
-    font-size: clamp(1.7rem, 9vw, 2.4rem);
-    max-width: none;
+    font-size: clamp(1.56rem, 8.6vw, 2.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.01em;
+    max-width: 12ch;
+    text-wrap: balance;
   }
 
   .regulation-title span {
-    white-space: normal;
+    display: inline;
   }
 
   .regulation-button {
@@ -1912,8 +1921,8 @@ img {
   }
 
   .regulation-action-wrap {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-top-brand {
@@ -2080,6 +2089,11 @@ img {
 
   .regulation-action-wrap {
     width: 100%;
+    justify-content: center;
+  }
+
+  .regulation-button-wrap {
+    margin-inline: auto;
   }
 
   .regulation-button {
@@ -2158,11 +2172,15 @@ img {
   }
 
   .countdown-shell {
-    padding: 18px 0 6px;
+    padding: 18px 12px 6px;
   }
 
   .countdown-title {
     line-height: 1.02;
+  }
+
+  .countdown-mobile-break br {
+    display: block;
   }
 
   .countdown-grid {
@@ -2248,17 +2266,27 @@ img {
 
   .cta-shell {
     min-height: 360px;
-    padding: 44px 18px;
+    margin-inline: 8px;
+    padding: 68px 24px 52px;
   }
 
   .cta-title {
-    font-size: clamp(1.65rem, 9vw, 2.5rem);
+    margin-top: 10px;
+    font-size: clamp(1.5rem, 8.2vw, 2.2rem);
   }
 
-  .cta-button,
-  .regulation-button {
+  .cta-button-wrap {
+    margin-top: 22px;
+  }
+
+  .cta-button {
     width: 100%;
     min-width: 0;
+  }
+
+  .regulation-button {
+    width: auto;
+    min-width: min(100%, 320px);
   }
 
   .regulation-section {
@@ -2385,3 +2413,4 @@ img {
     justify-content: flex-start;
   }
 }
+

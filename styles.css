@@ -1782,154 +1782,157 @@ img {
   0% { background-position: 180% 0, 100% 180%, -80% 100%, 0 -80%; }
   100% { background-position: -80% 0, 100% -80%, 180% 100%, 0 180%; }
 }
-  100% { background-position: -80% 0, 100% -80%, 180% 100%, 0 180%; }
-}
+
 @keyframes buttonPulse {
   0%, 100% { box-shadow: 0 16px 40px rgba(239, 182, 61, 0.34); }
   50% { box-shadow: 0 22px 48px rgba(239, 182, 61, 0.42); }
 }
 
 @media (max-width: 1080px) {
-  .challenge-gallery,
-  .experience-layout,
-  .summit-top {
-    grid-template-columns: 1fr;
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .header-inner {
+    padding-inline: 18px;
+  }
+
+  .main-nav {
+    gap: 10px;
+  }
+
+  .nav-link {
+    padding: 9px 12px;
+    font-size: 0.88rem;
   }
 
   .route-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.95fr);
-  gap: clamp(28px, 3vw, 54px);
-  align-items: stretch;
-  padding: clamp(28px, 4vw, 42px);
-  border-radius: 34px;
-  background: url('./bgazul.png') center/cover no-repeat;
-  box-shadow: 0 26px 60px rgba(16, 40, 74, 0.16);
-}
-
-.challenge-reset {
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  align-items: stretch;
-  gap: 28px;
-}
-
-.challenge-feature {
-  display: grid;
-  align-content: center;
-  gap: 18px;
-  padding: 30px;
-  min-height: 100%;
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background:
-    radial-gradient(circle at top right, rgba(239, 182, 61, 0.16), transparent 24%),
-    linear-gradient(145deg, #081327 0%, #0d2650 55%, #133a7d 100%);
-  box-shadow: var(--shadow);
-}
-
-.challenge-feature-kicker {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-family: var(--font-display);
-  font-size: 1.02rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.challenge-feature-mark {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: clamp(4.8rem, 10vw, 7rem);
-  font-weight: 800;
-  line-height: 0.86;
-  letter-spacing: -0.05em;
-}
-
-.challenge-feature-mark span {
-  padding-bottom: 12px;
-  color: #f1c562;
-  font-size: clamp(1.05rem, 2vw, 1.5rem);
-  letter-spacing: 0.16em;
-}
-
-.challenge-feature-copy {
-  margin: 0;
-  max-width: 34rem;
-  color: rgba(255, 255, 255, 0.84);
-  font-size: 1.06rem;
-  line-height: 1.7;
-}
-
-.challenge-feature-points {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.challenge-feature-points span {
-  padding: 10px 14px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 1.02rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-@media (max-width: 960px) {
-  .challenge-reset {
     grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 26px;
   }
 
-  .challenge-feature {
-    padding: 24px;
-  }
-}
-
-@media (max-width: 640px) {
-  .distance-bubble {
-    width: 128px;
-    height: 128px;
-    font-size: 0.92rem;
+  .route-story {
+    max-width: none;
+    padding-left: 0;
   }
 
-  .tourism-title {
-  margin: 0;
-  color: #0c1730;
-  font-family: var(--font-display);
-  font-size: clamp(1.55rem, 3.5vw, 3.1rem);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-}
+  .route-story-title {
+    font-size: clamp(2.2rem, 7vw, 4rem);
+  }
+
+  .route-media {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .route-media-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  .about-bands-section {
+    padding: 24px 0 28px;
+  }
+
+  .about-band-card {
+    width: 198px;
+    height: 312px;
+  }
+
+  .about-band-card--landscape {
+    width: 320px;
+    height: 206px;
+  }
+
+  .countdown-shell {
+    padding-inline: 12px;
+  }
 
   .countdown-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .route-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.95fr);
-  gap: clamp(28px, 3vw, 54px);
-  align-items: stretch;
-  padding: clamp(28px, 4vw, 42px);
-  border-radius: 34px;
-  background: url('./bgazul.png') center/cover no-repeat;
-  box-shadow: 0 26px 60px rgba(16, 40, 74, 0.16);
+  .countdown-ticker-row,
+  .distance-ticker-row {
+    font-size: 0.64rem;
+    letter-spacing: 0.16em;
+    gap: 28px;
+  }
+
+  .countdown-ticker-track,
+  .distance-ticker-track {
+    gap: 28px;
+  }
+
+  .countdown-ticker-row span + span::before,
+  .distance-ticker-row span + span::before {
+    margin-right: 28px;
+  }
+
+  .tourism-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .tourism-card {
+    width: 280px;
+  }
+
+  .distance-bubbles {
+    gap: 14px;
+  }
+
+  .distance-bubble {
+    width: 180px;
+    height: 180px;
+  }
+
+  .experience-layout,
+  .summit-top,
+  .regulation-card {
+    grid-template-columns: 1fr;
+  }
+
+  .video-thumb {
+    aspect-ratio: 16 / 9;
+  }
+
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .cta-shell {
+    padding: 64px 28px;
+  }
+
+  .regulation-card {
+    gap: 22px;
+    padding: 30px 26px;
+  }
+
+  .regulation-action-wrap {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-top-brand {
+    padding-inline: 20px;
+  }
 }
+
 @media (max-width: 960px) {
   .header-inner {
     min-height: 70px;
     padding: 10px 16px;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
     gap: 10px;
   }
@@ -1946,13 +1949,13 @@ img {
     display: none;
     order: 3;
     width: 100%;
-    padding: 10px 6px 6px;
-    border-radius: 14px;
+    padding: 10px 8px 8px;
+    border-radius: 16px;
     border: 1px solid rgba(13, 99, 216, 0.14);
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.96);
     box-shadow: 0 10px 22px rgba(8, 27, 66, 0.08);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 4px;
   }
 
@@ -1960,175 +1963,339 @@ img {
     display: flex;
   }
 
-  .nav-link {
+  .nav-link,
+  .nav-link:hover,
+  .nav-link:focus-visible,
+  .nav-link.is-active {
     width: 100%;
-    padding: 10px 8px;
+    justify-content: flex-start;
+    padding: 11px 10px;
     transform: none;
-    font-size: 1.06rem;
-    letter-spacing: normal;
+    letter-spacing: 0.04em;
+    font-size: 0.96rem;
   }
 
   .nav-link::after {
     display: none;
   }
 
-  .nav-link:hover,
   .nav-link-instagram {
-  padding: 10px;
-  min-width: 42px;
-  justify-content: center;
-}
-
-.nav-instagram-icon {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
-.nav-link:focus-visible,
-  .nav-link.is-active {
-    transform: translateX(2px);
+    min-width: 0;
   }
 
   .hero-media {
-    min-height: 460px;
+    min-height: 360px;
   }
 
-  .hero-content {
-    padding-bottom: 66px;
+  .section-eyebrow,
+  .distance-eyebrow,
+  .tourism-eyebrow,
+  .route-panel-eyebrow,
+  .countdown-section .section-eyebrow {
+    font-size: 0.88rem;
+    letter-spacing: 0.14em;
   }
 
-  .section {
-    padding: 64px 0;
+  .tourism-title,
+  .distance-title,
+  .experience-heading .section-title,
+  .countdown-title {
+    font-size: clamp(1.85rem, 5.4vw, 2.8rem);
   }
 
-  .photo-card-large,
-  .photo-card,
-  .photo-card-wide {
-    min-height: 240px;
-    grid-row: auto;
-    grid-column: auto;
+  .route-story-title {
+    font-size: clamp(2rem, 8vw, 3.6rem);
+    line-height: 0.9;
   }
 
-  .experience-cards,
-  .topics-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));
-  justify-content: center;
-  gap: 16px;
-}
+  .route-media-image {
+    aspect-ratio: 4 / 5;
+  }
 
-@media (max-width: 640px) {
+  .about-bands-track,
+  .about-bands-row {
+    gap: 14px;
+  }
+
+  .about-band-card {
+    width: 176px;
+    height: 270px;
+    border-radius: 20px;
+  }
+
+  .about-band-card--landscape {
+    width: 274px;
+    height: 176px;
+  }
+
+  .countdown-value {
+    font-size: clamp(2rem, 8vw, 3.6rem);
+  }
+
+  .tourism-card {
+    width: 250px;
+  }
+
+  .tourism-caption {
+    font-size: 0.84rem;
+    padding: 14px 14px 16px;
+  }
+
+  .distance-bubbles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+  }
+
   .distance-bubble {
-    width: 128px;
-    height: 128px;
-    font-size: 0.92rem;
+    width: min(100%, 220px);
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
 
-  .tourism-title {
-  margin: 0;
-  color: #0c1730;
-  font-family: var(--font-display);
-  font-size: clamp(1.55rem, 3.5vw, 3.1rem);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-}
+  .summit-mini-logo {
+    width: 146px;
+  }
 
-  .countdown-grid {
+  .summit-title {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+  }
+
+  .topics-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .route-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.95fr);
-  gap: clamp(28px, 3vw, 54px);
-  align-items: stretch;
-  padding: clamp(28px, 4vw, 42px);
-  border-radius: 34px;
-  background: url('./bgazul.png') center/cover no-repeat;
-  box-shadow: 0 26px 60px rgba(16, 40, 74, 0.16);
+  .topic-chip {
+    min-height: 78px;
+    padding: 16px 14px;
+    font-size: 0.88rem;
+    text-align: center;
+  }
+
+  .cta-shell {
+    min-height: 420px;
+    padding: 56px 24px;
+  }
+
+  .cta-title {
+    font-size: clamp(1.9rem, 6vw, 3rem);
+  }
+
+  .regulation-title {
+    font-size: clamp(2rem, 6vw, 3.4rem);
+  }
+
+  .regulation-action-wrap {
+    width: 100%;
+  }
+
+  .regulation-button {
+    min-width: min(100%, 320px);
+  }
+
+  .footer-main-logo {
+    width: min(100%, 520px);
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 52px 0;
+  }
+
+  .site-header {
+    background: rgba(255, 255, 255, 0.92);
+  }
+
+  .header-inner {
+    padding: 10px 14px;
+  }
+
+  .brand-logo {
+    width: 44px;
+  }
+
+  .menu-toggle {
+    width: 42px;
+    height: 40px;
+  }
+
+  .hero-media {
+    min-height: 250px;
+  }
+
+  .route-panel {
+    gap: 18px;
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .route-story-title {
+    font-size: clamp(2rem, 13vw, 3rem);
+  }
+
+  .route-media-image {
+    aspect-ratio: 4 / 5;
+    border-radius: 20px;
+  }
+
+  .about-bands-section {
+    padding: 18px 0 22px;
+  }
+
+  .about-bands-marquee + .about-bands-marquee {
+    margin-top: 12px;
+  }
+
+  .about-band-card {
+    width: 150px;
+    height: 232px;
+    border-radius: 16px;
+  }
+
+  .about-band-card--landscape {
+    width: 232px;
+    height: 150px;
+  }
+
+  .countdown-shell {
+    padding: 18px 0 6px;
+  }
+
+  .countdown-title {
+    line-height: 1.02;
+  }
+
+  .countdown-grid {
+    gap: 12px;
+  }
+
+  .countdown-item {
+    padding: 16px 10px;
+  }
+
+  .countdown-value {
+    font-size: clamp(1.8rem, 12vw, 3rem);
+  }
+
+  .countdown-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+
+  .countdown-ticker-row,
+  .distance-ticker-row {
+    padding: 11px 0;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    gap: 20px;
+  }
+
+  .countdown-ticker-track,
+  .distance-ticker-track {
+    gap: 20px;
+  }
+
+  .countdown-ticker-row span + span::before,
+  .distance-ticker-row span + span::before {
+    margin-right: 20px;
+  }
+
+  .tourism-section {
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+
+  .tourism-shell {
+    margin-bottom: 16px;
+  }
+
+  .tourism-card {
+    width: 220px;
+  }
+
+  .tourism-image {
+    height: 220px;
+  }
+
+  .distance-bubbles {
+    gap: 12px;
+  }
+
+  .distance-bubble {
+    width: min(100%, 170px);
+  }
+
+  .video-thumb {
+    aspect-ratio: 9 / 16;
+  }
+
+  .summit-shell {
+    gap: 18px;
+  }
+
+  .summit-title {
+    font-size: clamp(1.8rem, 9vw, 2.8rem);
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-chip {
+    min-height: 66px;
+    font-size: 0.82rem;
+  }
+
+  .cta-shell {
+    min-height: 360px;
+    padding: 44px 18px;
+  }
+
+  .cta-title {
+    font-size: clamp(1.65rem, 9vw, 2.5rem);
+  }
+
+  .cta-button,
+  .regulation-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .regulation-section {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .regulation-card {
+    padding: 22px 18px;
+    border-radius: 22px;
+  }
+
+  .regulation-title {
+    font-size: clamp(1.7rem, 10vw, 2.6rem);
+    line-height: 0.92;
+  }
+
+  .footer-top-brand {
+    padding-inline: 16px;
+  }
+
+  .footer-main-logo {
+    width: min(100%, 360px);
+  }
+
+  .footer-credit {
+    gap: 10px;
+    padding: 0 16px 26px;
+  }
+
+  .footer-credit-copy {
+    text-align: center;
+    line-height: 1.4;
+  }
+}

@@ -143,6 +143,18 @@ sliderRoots.forEach((sliderRoot) => {
   sliderRoot.addEventListener('mouseleave', restartAutoplay);
 });
 
+const experienceVideo = document.querySelector('.video-card .video-thumb');
+
+if (experienceVideo) {
+  const playVideo = () => {
+    const playPromise = experienceVideo.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(() => {});
+    }
+  };
+
+  experienceVideo.addEventListener('mouseenter', playVideo);
+}
 const countdownRoot = document.querySelector('[data-countdown-target]');
 
 if (countdownRoot) {
@@ -323,3 +335,6 @@ interactiveCards.forEach((card) => {
   card.addEventListener('pointerleave', resetCard);
   card.addEventListener('pointerup', resetCard);
 });
+
+
+

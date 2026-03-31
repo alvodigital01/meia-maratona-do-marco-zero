@@ -35,7 +35,17 @@
           <a class="nav-link" href="#experiencia">Experiência</a>
           <a class="nav-link" href="#summit">MZ Summit</a>
           <a class="nav-link" href="#inscricoes">Inscrições</a>
-          <a class="nav-link" href="#contato">Contato</a>
+          <a
+            class="nav-link nav-link-instagram"
+            href="https://www.instagram.com/meiamaratonadomarcozero/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram oficial da Meia Maratona do Marco Zero"
+          >
+            <svg class="nav-instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.38-2.63a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26Z" fill="currentColor"/>
+            </svg>
+          </a>
         </nav>
       </div>
     </header>
@@ -204,6 +214,20 @@
         <div class="container distance-shell">
           <p class="distance-eyebrow">Distâncias</p>
           <h3 class="distance-title">Escolha o seu desafio</h3>
+          <div class="distance-ticker-section" aria-label="Faixa de percurso em breve">
+            <div class="distance-ticker-track">
+              <p class="distance-ticker-row">
+                <span>PERCURSO: EM BREVE</span>
+                <span>PERCURSO: EM BREVE</span>
+                <span>PERCURSO: EM BREVE</span>
+              </p>
+              <p class="distance-ticker-row" aria-hidden="true">
+                <span>PERCURSO: EM BREVE</span>
+                <span>PERCURSO: EM BREVE</span>
+                <span>PERCURSO: EM BREVE</span>
+              </p>
+            </div>
+          </div>
           <div class="distance-bubbles" aria-label="Distâncias da prova">
             <figure class="distance-bubble interactive-card distance-bubble-5" aria-label="Distância 5KM">
               <img src="./MMMZ I 700x700 [5km].png" alt="5KM" class="distance-bubble-image" />
@@ -224,13 +248,15 @@
         <div class="container">
           <div class="section-heading reveal experience-heading">
             <p class="section-eyebrow">Experiência do evento</p>
-            <h2 class="section-title">Mais do que uma corrida, uma experiência completa.</h2>
-            <p class="section-copy experience-intro">O aftermovie concentra a energia da prova, mostrando percurso, público, cidade e a atmosfera que transforma o evento em uma experiência memorável.</p>
+            <h2 class="section-title"><span>Mais do que uma corrida,</span><span>uma experiência completa.</span></h2>
           </div>
 
           <div class="experience-layout reveal">
-            <div class="video-card" aria-label="Espaço preparado para receber o vídeo do evento">
-              <div class="video-thumb"></div>
+            <div class="video-card" aria-label="Vídeo aftermovie do evento">
+              <video class="video-thumb" controls playsinline preload="metadata">
+                <source src="./MEIA MARATONA DO MARCO ZERO.mp4" type="video/mp4" />
+                Seu navegador não suporta reprodução de vídeo.
+              </video>
             </div>
           </div>
         </div>
@@ -241,7 +267,7 @@
           <div class="summit-top">
             <div class="summit-copy reveal">
               <img src="./mz summit.png" alt="Logo MZ Summit" class="summit-mini-logo" />
-              <h2 class="section-title summit-title">Encontros que conectam corrida, saúde e cultura.</h2>
+              <h2 class="section-title summit-title"><span>Encontros que conectam</span><span>corrida, saúde</span><span>e cultura.</span></h2>
               <p class="section-copy">Durante os dois dias que antecedem a prova, o MZ Summit reúne nomes relevantes para discutir temas que vão além da linha de chegada.</p>
             </div>
 
@@ -265,16 +291,34 @@
 
       <section class="section positioning-section reveal race-section">
         <div class="container positioning-shell">
-          <p class="section-eyebrow section-eyebrow-light">Posicionamento</p>
           <h2 class="positioning-title">A corrida que coloca Recife no mapa das grandes provas do Brasil.</h2>
         </div>
       </section>
 
       <section id="inscricoes" class="section cta-section reveal race-section">
         <div class="container cta-shell">
+          <video class="cta-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+            <source src="./novo2.mp4" type="video/mp4" />
+          </video>
           <h2 class="cta-title">Faça parte da segunda edição de um evento que já nasceu grande.</h2>
-          <p class="cta-copy">Garanta sua participação e viva uma experiência única no coração do Recife.</p>
           <a class="cta-button" href="#inicio">Inscreva-se agora</a>
+        </div>
+      </section>
+
+      <section class="section regulation-section reveal race-section" aria-label="Download do regulamento">
+        <div class="container regulation-shell">
+          <div class="regulation-card">
+            <div class="regulation-copy">
+              <p class="section-eyebrow regulation-eyebrow">Regulamento</p>
+              <h2 class="regulation-title">Baixe o regulamento oficial e consulte todas as orientações da prova.</h2>
+              <p class="regulation-text">O arquivo reúne informações importantes sobre regras, categorias, horários, kits, percurso e diretrizes para a participação no evento.</p>
+            </div>
+
+            <div class="regulation-action-wrap">
+              <div class="regulation-badge">PDF oficial da prova</div>
+              <a class="regulation-button" href="./373d6d04cb134bffa6038103dd6ab79d639100338090170776.pdf" download="Regulamento-Meia-Maratona-do-Marco-Zero.pdf">Baixar regulamento</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -290,46 +334,30 @@
         />
       </div>
 
-      <div class="container footer-shell">
-        <div class="footer-column">
-          <p class="footer-title">Navegação</p>
-          <nav class="footer-links" aria-label="Links do rodapé">
-            <a href="#inicio">Início</a>
-            <a href="#percurso">Percurso</a>
-            <a href="#inscricoes">Inscrições</a>
-          </nav>
-        </div>
-
-        <div class="footer-column">
-          <p class="footer-title">Contato</p>
-          <div class="footer-contact-list">
-            <a href="mailto:contato@meiamaratonadomarcozero.com.br" class="footer-contact-item" aria-label="Enviar e-mail para o evento">
-              <span class="footer-icon">@</span>
-              <span>contato@meiamaratonadomarcozero.com.br</span>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" class="footer-contact-item" aria-label="Instagram oficial do evento">
-              <span class="footer-icon">IG</span>
-              <span>@meiamaratonadomarcozero</span>
-            </a>
-            <div class="footer-contact-item" aria-label="Cidade do evento">
-              <span class="footer-icon">PE</span>
-              <span>Recife - PE</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container footer-bottom-shell">
-          <p>© 2026 Meia Maratona do Marco Zero. Todos os direitos reservados.</p>
-          <p>Desenvolvido por N1 Agência.</p>
-        </div>
+      <div class="footer-credit">
+        <p class="footer-credit-copy">© COPYRIGHT 2026 • POWERED BY MEIA MARATONA DO MARCO ZERO</p>
+        <img src="./logo-n1.webp" alt="Logo N1" class="footer-credit-logo" />
       </div>
     </footer>
 
     <script src="./script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

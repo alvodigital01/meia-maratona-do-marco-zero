@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --blue-main: #0d63d8;
   --blue-deep: #0b2558;
   --blue-soft: #edf5ff;
@@ -625,6 +625,10 @@ img {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+.route-media-video-mobile {
+  display: none;
 }
 
 
@@ -2170,6 +2174,14 @@ img {
     border-radius: 20px;
   }
 
+  .route-media-image-desktop {
+    display: none;
+  }
+
+  .route-media-video-mobile {
+    display: block;
+  }
+
   .about-bands-section {
     padding: 18px 0 22px;
   }
@@ -2441,6 +2453,8 @@ img {
     flex: 0 0 auto;
   }
 }
+
+
 
 
 

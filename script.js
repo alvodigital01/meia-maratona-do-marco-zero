@@ -1,4 +1,4 @@
-﻿const revealElements = document.querySelectorAll('.reveal');
+const revealElements = document.querySelectorAll('.reveal');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('main section[id], footer[id]');
 const hero = document.querySelector('.hero-media');
@@ -155,6 +155,65 @@ if (experienceVideo) {
 
   experienceVideo.addEventListener('mouseenter', playVideo);
 }
+const mobileAutoplayVideo = document.querySelector('[data-mobile-autoplay]');
+const mobileVideoQuery = window.matchMedia('(max-width: 640px)');
+
+if (mobileAutoplayVideo) {
+  mobileAutoplayVideo.muted = true;
+
+  const safePlayMobileVideo = () => {
+    const playPromise = mobileAutoplayVideo.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(() => {});
+    }
+  };
+
+  const stopMobileVideo = () => {
+    mobileAutoplayVideo.pause();
+  };
+
+  let mobileVideoObserver;
+
+  const syncMobileVideoBehavior = () => {
+    if (mobileVideoObserver) {
+      mobileVideoObserver.disconnect();
+      mobileVideoObserver = undefined;
+    }
+
+    stopMobileVideo();
+
+    if (!mobileVideoQuery.matches) return;
+
+    if ('IntersectionObserver' in window) {
+      mobileVideoObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              safePlayMobileVideo();
+            } else {
+              stopMobileVideo();
+            }
+          });
+        },
+        { threshold: 0.45 }
+      );
+
+      mobileVideoObserver.observe(mobileAutoplayVideo);
+      return;
+    }
+
+    safePlayMobileVideo();
+  };
+
+  syncMobileVideoBehavior();
+
+  if (typeof mobileVideoQuery.addEventListener === 'function') {
+    mobileVideoQuery.addEventListener('change', syncMobileVideoBehavior);
+  } else if (typeof mobileVideoQuery.addListener === 'function') {
+    mobileVideoQuery.addListener(syncMobileVideoBehavior);
+  }
+}
+
 const countdownRoot = document.querySelector('[data-countdown-target]');
 
 if (countdownRoot) {

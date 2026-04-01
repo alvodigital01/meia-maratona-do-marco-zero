@@ -546,7 +546,7 @@ img {
 }
 
 .route-section {
-  background: #ffffff;
+  background: url('./bgdourado.png') center/cover no-repeat;
 }
 
 .route-shell {
@@ -2338,7 +2338,7 @@ img {
 
 .hero-cta-strip {
   width: 100%;
-  background: #ffffff;
+  background: #0F2F60;
 }
 
 .hero-cta-wrap {
@@ -2421,4 +2421,9 @@ img {
     justify-content: flex-start;
   }
 }
+
+
+
+
+
 

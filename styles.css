@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --blue-main: #0d63d8;
   --blue-deep: #0b2558;
   --blue-soft: #edf5ff;
@@ -2140,7 +2140,13 @@ img {
   }
 
   .hero-media {
-    min-height: 250px;
+    min-height: 0;
+    aspect-ratio: 1080 / 700;
+  }
+
+  .hero-slide-image {
+    object-fit: contain;
+    object-position: center top;
   }
 
   .route-panel {
@@ -2431,6 +2437,7 @@ img {
     flex: 0 0 auto;
   }
 }
+
 
 
 

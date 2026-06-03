@@ -3123,12 +3123,14 @@ img {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-#overlaySobre {
+#overlaySobre,
+#overlayExperiencia {
   display: none;
 }
 
 @media (max-width: 640px) {
-  #overlaySobre {
+  #overlaySobre,
+  #overlayExperiencia {
     display: flex;
   }
 }

@@ -2638,6 +2638,8 @@ img {
 .podio-eyebrow {
   margin: 0 0 10px;
   color: var(--blue-main);
+  font-size: 1.02rem;
+  letter-spacing: 0.18em;
   font-family: var(--font-display);
   font-size: 0.72rem;
   font-weight: 800;
@@ -2654,7 +2656,7 @@ img {
   padding-top: 0.1em;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--gold-main);
+  color: var(--blue-deep);
   display: inline-flex;
   align-items: center;
   gap: 0.18em;

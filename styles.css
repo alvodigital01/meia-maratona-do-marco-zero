@@ -1244,11 +1244,11 @@ img {
   white-space: nowrap;
 }
 
-.experience-mobile-break {
+.experience-heading .section-title .experience-mobile-break {
   display: inline;
 }
 
-.experience-mobile-break::before {
+.experience-heading .section-title .experience-mobile-break::before {
   content: " ";
 }
 
@@ -2165,7 +2165,7 @@ img {
     line-height: 0.9;
   }
 
-  .experience-mobile-break {
+  .experience-heading .section-title .experience-mobile-break {
     display: block;
   }
 
@@ -2173,7 +2173,7 @@ img {
     white-space: normal;
   }
 
-  .experience-mobile-break::before {
+  .experience-heading .section-title .experience-mobile-break::before {
     content: "";
   }
 

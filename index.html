@@ -31,11 +31,13 @@
         </button>
 
         <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
-          <a class="nav-link is-active" href="#inicio">Início</a>
-          <a class="nav-link" href="#distancias">Distâncias</a>
-          <a class="nav-link" href="#experiencia">Experiência</a>
-          <a class="nav-link" href="#summit">MZ Summit</a>
-          <a class="nav-link" href="#inscricoes">Inscrições</a>
+          <div class="nav-links">
+            <a class="nav-link is-active" href="#inicio">Início</a>
+            <a class="nav-link" href="#distancias">Distâncias</a>
+            <a class="nav-link" href="#experiencia">Experiência</a>
+            <a class="nav-link" href="#summit">MZ Summit</a>
+            <a class="nav-link" href="#inscricoes">Inscrições</a>
+          </div>
           <div class="header-actions">
             <div class="button-light-wrap header-signup-wrap"><span class="button-light-glow" aria-hidden="true"></span><a class="header-signup-button cta-button animated-light-button" href="https://www.ticketsports.com.br/e/2o-meia-maratona-do-marco-zero-86465" target="_blank" rel="noreferrer">Fazer inscrição</a></div>
             <a
@@ -336,14 +338,321 @@
           </div>
 
           <div class="topics-grid reveal" aria-label="Temas das palestras do MZ Summit">
-            <span class="topic-chip">Esporte</span>
-            <span class="topic-chip">Saúde</span>
-            <span class="topic-chip">Empreendedorismo esportivo</span>
-            <span class="topic-chip">Superação</span>
-            <span class="topic-chip">Alto rendimento feminino</span>
-            <span class="topic-chip">Cultura local</span>
-            <span class="topic-chip">Endurance</span>
-            <span class="topic-chip">Esportes de inclusão</span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2L9.5 8.5H3l5.5 4-2 6.5L12 15l5.5 3.5-2-6.5L21 8.5h-6.5L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+              <span class="topic-chip-label">Esporte</span>
+            </span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21C12 21 4 14.5 4 9a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 5.5-8 12-8 12z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M8 9h2l1.5 2.5L13 7l1.5 3.5H17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="topic-chip-label">Saúde</span>
+            </span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="13" width="4" height="8" rx="1" stroke="currentColor" stroke-width="1.6"/>
+                <rect x="10" y="9" width="4" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/>
+                <rect x="17" y="4" width="4" height="17" rx="1" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M5 10l4-4 4 3 5-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="topic-chip-label">Empreendedorismo esportivo</span>
+            </span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 18L9 10l4 4 4-6 4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 6l4 4M17 6h4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="topic-chip-label">Superação</span>
+            </span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M12 11v4M10 13h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M12 15l-3 5M12 15l3 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M18 5l2-2M18 5h2M18 5v2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+              <span class="topic-chip-label">Alto rendimento feminino</span>
+            </span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.4"/>
+              </svg>
+              <span class="topic-chip-label">Cultura local</span>
+            </span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 3v1M12 20v1M3 12H2M22 12h-1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+              <span class="topic-chip-label">Endurance</span>
+            </span>
+            <span class="topic-chip">
+              <svg class="topic-chip-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="8" cy="6" r="2" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="16" cy="6" r="2" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M4 20v-4a4 4 0 0 1 8 0v4M12 20v-4a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M8 14c1.5-1 4.5-1 6 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+              <span class="topic-chip-label">Esportes de inclusão</span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="podio" class="section podio-section race-section" aria-label="Pódio da edição 2025">
+        <div class="container podio-shell">
+
+          <div class="podio-header reveal">
+            <p class="podio-eyebrow">Edição 2025</p>
+            <h2 class="podio-title">P&Oacute;DIO</h2>
+            <p class="podio-subtitle">Os atletas que conquistaram o alto da montanha.</p>
+          </div>
+
+          <div class="podio-layout">
+
+            <div class="podio-gallery reveal">
+              <div class="podio-carousel" id="podioCarousel">
+                <div class="podio-track" id="podioTrack">
+                  <figure class="podio-slide"><img src="./podio1.png" alt="Pódio 2025 — foto 1" class="podio-img" /></figure>
+                  <figure class="podio-slide"><img src="./podio2.png" alt="Pódio 2025 — foto 2" class="podio-img" /></figure>
+                  <figure class="podio-slide"><img src="./podio3.png" alt="Pódio 2025 — foto 3" class="podio-img" /></figure>
+                  <figure class="podio-slide"><img src="./podio4.png" alt="Pódio 2025 — foto 4" class="podio-img" /></figure>
+                  <figure class="podio-slide"><img src="./podio5.png" alt="Pódio 2025 — foto 5" class="podio-img" /></figure>
+                </div>
+                <button class="podio-nav podio-nav-prev" aria-label="Foto anterior">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="podio-nav podio-nav-next" aria-label="Próxima foto">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="podio-dots">
+                  <button class="podio-dot is-active" aria-label="Foto 1"></button>
+                  <button class="podio-dot" aria-label="Foto 2"></button>
+                  <button class="podio-dot" aria-label="Foto 3"></button>
+                  <button class="podio-dot" aria-label="Foto 4"></button>
+                  <button class="podio-dot" aria-label="Foto 5"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="podio-results reveal">
+              <nav class="podio-tabs" aria-label="Categorias do pódio">
+                <button class="podio-tab is-active" data-target="podio-panel-5km-m">5KM <em>M</em></button>
+                <button class="podio-tab" data-target="podio-panel-5km-f">5KM <em>F</em></button>
+                <button class="podio-tab" data-target="podio-panel-10km-m">10KM <em>M</em></button>
+                <button class="podio-tab" data-target="podio-panel-10km-f">10KM <em>F</em></button>
+                <button class="podio-tab" data-target="podio-panel-21km-m">21KM <em>M</em></button>
+                <button class="podio-tab" data-target="podio-panel-21km-f">21KM <em>F</em></button>
+              </nav>
+
+              <div class="podio-panels">
+
+                <div class="podio-panel is-active" id="podio-panel-5km-m">
+                  <div class="podio-row podio-row-1">
+                    <span class="podio-pos podio-pos-gold">1</span>
+                    <span class="podio-bib">5709</span>
+                    <span class="podio-name">ITANICIO VICENTE DA SILVA</span>
+                    <span class="podio-time">15:07</span>
+                  </div>
+                  <div class="podio-row podio-row-2">
+                    <span class="podio-pos podio-pos-silver">2</span>
+                    <span class="podio-bib">5363</span>
+                    <span class="podio-name">ANDRE LUIZ GONCALVES DA SILVA</span>
+                    <span class="podio-time">15:33</span>
+                  </div>
+                  <div class="podio-row podio-row-3">
+                    <span class="podio-pos podio-pos-bronze">3</span>
+                    <span class="podio-bib">5554</span>
+                    <span class="podio-name">VINICIUS MARQUES DA CUNHA VIEIRA</span>
+                    <span class="podio-time">15:36</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">4</span>
+                    <span class="podio-bib">5762</span>
+                    <span class="podio-name">LEONARDO COLETE DE LIMA</span>
+                    <span class="podio-time">15:40</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">5</span>
+                    <span class="podio-bib">5485</span>
+                    <span class="podio-name">LEANDRO JOÃO DA SILVA</span>
+                    <span class="podio-time">15:48</span>
+                  </div>
+                </div>
+
+                <div class="podio-panel" id="podio-panel-5km-f">
+                  <div class="podio-row podio-row-1">
+                    <span class="podio-pos podio-pos-gold">1</span>
+                    <span class="podio-bib">5306</span>
+                    <span class="podio-name">SANDRA MARIA AGUIAR</span>
+                    <span class="podio-time">19:51</span>
+                  </div>
+                  <div class="podio-row podio-row-2">
+                    <span class="podio-pos podio-pos-silver">2</span>
+                    <span class="podio-bib">5070</span>
+                    <span class="podio-name">CLAUDIANA CONCEIÇÃO BARBOSA</span>
+                    <span class="podio-time">19:57</span>
+                  </div>
+                  <div class="podio-row podio-row-3">
+                    <span class="podio-pos podio-pos-bronze">3</span>
+                    <span class="podio-bib">5166</span>
+                    <span class="podio-name">KEIDJA GRAZIELE</span>
+                    <span class="podio-time">20:07</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">4</span>
+                    <span class="podio-bib">5258</span>
+                    <span class="podio-name">NAIZA ALVES DO NASCIMENTO</span>
+                    <span class="podio-time">20:50</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">5</span>
+                    <span class="podio-bib">5823</span>
+                    <span class="podio-name">MONICA MARIA GOMES TAVARES</span>
+                    <span class="podio-time">20:55</span>
+                  </div>
+                </div>
+
+                <div class="podio-panel" id="podio-panel-10km-m">
+                  <div class="podio-row podio-row-1">
+                    <span class="podio-pos podio-pos-gold">1</span>
+                    <span class="podio-bib">1527</span>
+                    <span class="podio-name">VALMIR ANTONIO BARBOSA</span>
+                    <span class="podio-time">30:47</span>
+                  </div>
+                  <div class="podio-row podio-row-2">
+                    <span class="podio-pos podio-pos-silver">2</span>
+                    <span class="podio-bib">1615</span>
+                    <span class="podio-name">EMANUEL SILVA SANTOS</span>
+                    <span class="podio-time">31:59</span>
+                  </div>
+                  <div class="podio-row podio-row-3">
+                    <span class="podio-pos podio-pos-bronze">3</span>
+                    <span class="podio-bib">1342</span>
+                    <span class="podio-name">DAMIÃO GRACILIANO DA SILVA</span>
+                    <span class="podio-time">32:59</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">4</span>
+                    <span class="podio-bib">1504</span>
+                    <span class="podio-name">RICARDO REGINALDO DA SILVA</span>
+                    <span class="podio-time">33:14</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">5</span>
+                    <span class="podio-bib">1545</span>
+                    <span class="podio-name">ADRIEL GOMES</span>
+                    <span class="podio-time">33:32</span>
+                  </div>
+                </div>
+
+                <div class="podio-panel" id="podio-panel-10km-f">
+                  <div class="podio-row podio-row-1">
+                    <span class="podio-pos podio-pos-gold">1</span>
+                    <span class="podio-bib">1140</span>
+                    <span class="podio-name">JOYCE LINS LIMA</span>
+                    <span class="podio-time">37:44</span>
+                  </div>
+                  <div class="podio-row podio-row-2">
+                    <span class="podio-pos podio-pos-silver">2</span>
+                    <span class="podio-bib">1743</span>
+                    <span class="podio-name">SWARA FERRAZ DE SA BARRETO</span>
+                    <span class="podio-time">39:37</span>
+                  </div>
+                  <div class="podio-row podio-row-3">
+                    <span class="podio-pos podio-pos-bronze">3</span>
+                    <span class="podio-bib">1193</span>
+                    <span class="podio-name">MARIA EDVANIA LOPES DE SANTANA</span>
+                    <span class="podio-time">40:51</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">4</span>
+                    <span class="podio-bib">1196</span>
+                    <span class="podio-name">MARIA JOSSE FELIPE NETO</span>
+                    <span class="podio-time">41:03</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">5</span>
+                    <span class="podio-bib">1722</span>
+                    <span class="podio-name">PRISCILA SANTANA VERISSIMO DE OLIV</span>
+                    <span class="podio-time">43:21</span>
+                  </div>
+                </div>
+
+                <div class="podio-panel" id="podio-panel-21km-m">
+                  <div class="podio-row podio-row-1">
+                    <span class="podio-pos podio-pos-gold">1</span>
+                    <span class="podio-bib">2817</span>
+                    <span class="podio-name">SILVAN DOS SANTOS</span>
+                    <span class="podio-time">1:06:05</span>
+                  </div>
+                  <div class="podio-row podio-row-2">
+                    <span class="podio-pos podio-pos-silver">2</span>
+                    <span class="podio-bib">2591</span>
+                    <span class="podio-name">JOAO MARCOS SANTOS FERREIRA</span>
+                    <span class="podio-time">1:06:47</span>
+                  </div>
+                  <div class="podio-row podio-row-3">
+                    <span class="podio-pos podio-pos-bronze">3</span>
+                    <span class="podio-bib">2777</span>
+                    <span class="podio-name">RAFAEL GOMES FIGUEIREDO</span>
+                    <span class="podio-time">1:13:44</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">4</span>
+                    <span class="podio-bib">3228</span>
+                    <span class="podio-name">JOSEMIR ALMEIDA GADELHA</span>
+                    <span class="podio-time">1:16:45</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">5</span>
+                    <span class="podio-bib">2479</span>
+                    <span class="podio-name">EMANOEL TAVARES DE OLIVEIRA</span>
+                    <span class="podio-time">1:18:54</span>
+                  </div>
+                </div>
+
+                <div class="podio-panel" id="podio-panel-21km-f">
+                  <div class="podio-row podio-row-1">
+                    <span class="podio-pos podio-pos-gold">1</span>
+                    <span class="podio-bib">2109</span>
+                    <span class="podio-name">ALINE PRUDENCIO DE FREITAS</span>
+                    <span class="podio-time">1:19:56</span>
+                  </div>
+                  <div class="podio-row podio-row-2">
+                    <span class="podio-pos podio-pos-silver">2</span>
+                    <span class="podio-bib">2103</span>
+                    <span class="podio-name">ADRIANA TEODOSIO GONCALVES</span>
+                    <span class="podio-time">1:22:00</span>
+                  </div>
+                  <div class="podio-row podio-row-3">
+                    <span class="podio-pos podio-pos-bronze">3</span>
+                    <span class="podio-bib">2241</span>
+                    <span class="podio-name">MARIA ELIVANIA SOUZA DE BRITO</span>
+                    <span class="podio-time">1:25:49</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">4</span>
+                    <span class="podio-bib">2236</span>
+                    <span class="podio-name">MARIA DE LOURDE FERREIRA DE SOUZA</span>
+                    <span class="podio-time">1:25:49</span>
+                  </div>
+                  <div class="podio-row">
+                    <span class="podio-pos">5</span>
+                    <span class="podio-bib">2265</span>
+                    <span class="podio-name">MICHELY MARIA DE OLIVEIRA</span>
+                    <span class="podio-time">1:30:45</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -382,7 +691,7 @@
 
       <div class="container footer-top-brand">
         <img
-          src="./MMMZ I Logos 1920x1080.png"
+          src="./imagemfooter.png"
           alt="Marca da Meia Maratona do Marco Zero"
           class="footer-main-logo"
         />
@@ -395,10 +704,62 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script>
+      // PÓDIO — Carrossel
+      (function () {
+        var track = document.getElementById('podioTrack');
+        if (!track) return;
+        var slides = track.querySelectorAll('.podio-slide');
+        var dots = document.querySelectorAll('.podio-dot');
+        var btnPrev = document.querySelector('.podio-nav-prev');
+        var btnNext = document.querySelector('.podio-nav-next');
+        var current = 0;
+        var timer;
+
+        function goTo(idx) {
+          current = (idx + slides.length) % slides.length;
+          track.style.transform = 'translateX(-' + (current * 100) + '%)';
+          dots.forEach(function (d, i) { d.classList.toggle('is-active', i === current); });
+        }
+
+        function startAuto() { timer = setInterval(function () { goTo(current + 1); }, 4000); }
+        function resetAuto() { clearInterval(timer); startAuto(); }
+
+        if (btnPrev) btnPrev.addEventListener('click', function () { goTo(current - 1); resetAuto(); });
+        if (btnNext) btnNext.addEventListener('click', function () { goTo(current + 1); resetAuto(); });
+        dots.forEach(function (d, i) { d.addEventListener('click', function () { goTo(i); resetAuto(); }); });
+
+        // Swipe touch
+        var startX = 0;
+        var carousel = document.getElementById('podioCarousel');
+        if (carousel) {
+          carousel.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+          carousel.addEventListener('touchend', function (e) {
+            var dx = e.changedTouches[0].clientX - startX;
+            if (Math.abs(dx) > 40) { dx < 0 ? goTo(current + 1) : goTo(current - 1); resetAuto(); }
+          }, { passive: true });
+        }
+
+        startAuto();
+      })();
+
+      // PÓDIO — Tabs
+      (function () {
+        var tabs = document.querySelectorAll('.podio-tab');
+        var panels = document.querySelectorAll('.podio-panel');
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function () {
+            tabs.forEach(function (t) { t.classList.remove('is-active'); });
+            panels.forEach(function (p) { p.classList.remove('is-active'); });
+            tab.classList.add('is-active');
+            var target = document.getElementById(tab.dataset.target);
+            if (target) target.classList.add('is-active');
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
-
-
 
 
 

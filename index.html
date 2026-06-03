@@ -84,10 +84,16 @@
 
             <figure class="route-media reveal" aria-label="Midia da secao Sobre o evento">
               <img src="./novasobre.jpg" alt="Atletas em destaque na secao Sobre o evento" class="route-media-image route-media-image-desktop" />
-              <video class="route-media-video route-media-video-mobile" controls playsinline preload="metadata">
+              <video class="route-media-video route-media-video-mobile" controls playsinline preload="metadata" id="videoSobre">
                 <source src="./videosobre.MP4" type="video/mp4" />
                 Seu navegador nao suporta reproducao de video.
               </video>
+              <div class="video-play-overlay" id="overlaySobre" aria-hidden="true">
+                <div class="video-play-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+                <p class="video-play-label">Toque para assistir</p>
+              </div>
             </figure>
           </div>
         </div>
@@ -313,11 +319,17 @@
           </div>
 
           <div class="experience-layout reveal">
-            <div class="video-card" aria-label="Vídeo aftermovie do evento">
-              <video class="video-thumb" controls playsinline preload="metadata">
+            <div class="video-card" aria-label="Vídeo aftermovie do evento" style="position:relative;">
+              <video class="video-thumb" controls playsinline preload="metadata" id="videoExperiencia">
                 <source src="./IMG_4660.mp4" type="video/mp4" />
                 Seu navegador não suporta reprodução de vídeo.
               </video>
+              <div class="video-play-overlay" id="overlayExperiencia" aria-hidden="true">
+                <div class="video-play-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+                <p class="video-play-label">Clique para assistir</p>
+              </div>
             </div>
           </div>
         </div>
@@ -741,6 +753,29 @@
         }
 
         startAuto();
+      })();
+
+      // VIDEO OVERLAYS
+      (function () {
+        var pairs = [
+          { overlay: 'overlaySobre', video: 'videoSobre' },
+          { overlay: 'overlayExperiencia', video: 'videoExperiencia' }
+        ];
+        pairs.forEach(function (pair) {
+          var overlay = document.getElementById(pair.overlay);
+          var video = document.getElementById(pair.video);
+          if (!overlay || !video) return;
+          overlay.addEventListener('click', function () {
+            video.play();
+            overlay.classList.add('is-hidden');
+          });
+          video.addEventListener('play', function () {
+            overlay.classList.add('is-hidden');
+          });
+          video.addEventListener('pause', function () {
+            if (video.currentTime === 0) overlay.classList.remove('is-hidden');
+          });
+        });
       })();
 
       // PÓDIO — Tabs

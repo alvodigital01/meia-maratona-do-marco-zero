@@ -1240,8 +1240,16 @@ img {
   display: block;
 }
 
+.experience-heading .section-title > span:first-child {
+  white-space: nowrap;
+}
+
 .experience-mobile-break {
-  display: none;
+  display: inline;
+}
+
+.experience-mobile-break::before {
+  content: " ";
 }
 
 .experience-heading .section-copy {
@@ -2159,6 +2167,14 @@ img {
 
   .experience-mobile-break {
     display: block;
+  }
+
+  .experience-heading .section-title > span:first-child {
+    white-space: normal;
+  }
+
+  .experience-mobile-break::before {
+    content: "";
   }
 
   .route-media-image,

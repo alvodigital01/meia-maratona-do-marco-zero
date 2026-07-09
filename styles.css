@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --blue-main: #0d63d8;
   --blue-deep: #0b2558;
   --blue-soft: #edf5ff;
@@ -589,7 +589,7 @@ img {
 }
 
 .route-section {
-  background: url('./images/bgdourado.webp') center/cover no-repeat;
+  background: url('./images/backgrounds/bg-dourado.webp') center/cover no-repeat;
 }
 
 .route-shell {
@@ -603,7 +603,7 @@ img {
   align-items: stretch;
   padding: clamp(28px, 4vw, 42px);
   border-radius: 34px;
-  background: url('./images/bgazul.webp') center/cover no-repeat;
+  background: url('./images/backgrounds/bg-azul.webp') center/cover no-repeat;
   box-shadow: 0 26px 60px rgba(16, 40, 74, 0.16);
 }
 
@@ -773,7 +773,7 @@ img {
 .countdown-section {
   background:
     linear-gradient(180deg, rgba(236, 174, 13, 0.9), rgba(226, 162, 8, 0.9)),
-    url('./images/bgdourado.webp') center/cover no-repeat;
+    url('./images/backgrounds/bg-dourado.webp') center/cover no-repeat;
 }
 
 .countdown-shell {
@@ -1300,7 +1300,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('./images/mzz.webp') center/cover no-repeat;
+  background: url('./images/backgrounds/mzz.webp') center/cover no-repeat;
   opacity: 0.12;
   mix-blend-mode: screen;
 }
@@ -1463,7 +1463,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('./images/bgazul.webp') center/cover no-repeat;
+  background: url('./images/backgrounds/bg-azul.webp') center/cover no-repeat;
   opacity: 0.12;
   mix-blend-mode: screen;
 }
@@ -1484,7 +1484,7 @@ img {
   text-align: center;
   padding: 72px 28px;
   border-radius: 28px;
-  background: url('./images/bgazul.webp') center/cover no-repeat;
+  background: url('./images/backgrounds/bg-azul.webp') center/cover no-repeat;
   border: none;
   box-shadow: var(--shadow-soft);
 }
@@ -1594,7 +1594,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('./images/bgazul.webp') center/cover no-repeat;
+  background: url('./images/backgrounds/bg-azul.webp') center/cover no-repeat;
   opacity: 0.12;
   mix-blend-mode: screen;
   pointer-events: none;
@@ -1714,7 +1714,7 @@ img {
 .site-footer {
   position: relative;
   overflow: hidden;
-  background: url('./images/bgazul.webp') center/cover no-repeat;
+  background: url('./images/backgrounds/bg-azul.webp') center/cover no-repeat;
   color: #ffffff;
 }
 
